@@ -2,7 +2,8 @@
   "usingComponents": {
     "banner": "/components/banner/banner",
     "recommend": "./childComponents/recommend/recommend",
-    "myProtection":"./childComponents/myProtection/myProtection"
+    "myProtection":"./childComponents/myProtection/myProtection",
+    "nearestPlace":"./childComponents/nearestPlace/nearestPlace"
   },
   "navigationBarTitleText": "斌斌回收"
 }

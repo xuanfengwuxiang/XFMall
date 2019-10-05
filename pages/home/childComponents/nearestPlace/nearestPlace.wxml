@@ -1,0 +1,21 @@
+<!--最近回收点-->
+<view class="neareast_place" bindtap="onClickPlace">
+
+  <view style="display:flex">
+    <image src="/images/home/ic_nearest_place.jpg" style="width:100rpx;height:100rpx;" />
+    <view style="margin-left:25rpx">
+      <text style="color:#7B601D">{{nearestPlace}}</text>
+      <view style="margin-top:15rpx;font-size:23rpx;color:#A3A3A3">
+        <text>{{placeDetail}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view>
+    <text style="color:#7B601D;font-size:25rpx;">{{distance}}</text>
+    <view style="margin-top:10rpx">
+      <image src="/images/home/ic_arrow.jpg" style="width:50rpx;height:50rpx;" />
+    </view>
+  </view>
+
+</view>

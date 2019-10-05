@@ -1,0 +1,10 @@
+/* 最近回收点 样式*/
+.neareast_place {
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

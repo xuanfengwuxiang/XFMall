@@ -37,6 +37,11 @@ Page({
       "currentMoney": "¥100.00",
       "protectionNum": "0",
       "currentIntegral": "5000"
+    },
+    nearstPlace:{
+      nearestPlace: "天润城",
+      placeDetail: "10栋",
+      distance:"2.0km"
     }
   },
   /**

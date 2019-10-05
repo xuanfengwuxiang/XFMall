@@ -7,7 +7,8 @@
     "pages/home/childComponents/myProtection/myProtection",
     "pages/home/currentMoney/currentMoney",
     "pages/home/protectionNum/protectionNum",
-    "pages/home/currentIntegral/currentIntegral"
+    "pages/home/currentIntegral/currentIntegral",
+    "pages/home/nearestPlace/nearestPlace"
   ],
   "tabBar": {
     "selectedColor": "#EE7A77",
