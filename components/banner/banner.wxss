@@ -1,0 +1,4 @@
+/* 轮播图样式 */
+.banner_image {
+  width: 100%;
+}

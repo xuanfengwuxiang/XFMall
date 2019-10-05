@@ -1,3 +1,4 @@
 {
-  "usingComponents": {}
+  "usingComponents": {"banner":"/components/banner/banner"},
+  "navigationBarTitleText": "斌斌回收"
 }

@@ -1,2 +1,4 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!--首页-->
+
+<!-- 轮播图 -->
+<banner list="{{banners}}" bannerHeight="350rpx"/>
