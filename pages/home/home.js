@@ -24,15 +24,20 @@ Page({
       "image": "/images/home/ic_classify_tip.png",
       "tittle": "分类指南"
     }, {
-        "image": "/images/home/ic_invite_gift.png",
+      "image": "/images/home/ic_invite_gift.png",
       "tittle": "邀请有礼"
     }, {
-        "image": "/images/home/ic_integral_mall.png",
+      "image": "/images/home/ic_integral_mall.png",
       "tittle": "积分商城"
     }, {
-        "image": "/images/home/ic_sign_integral.png",
+      "image": "/images/home/ic_sign_integral.png",
       "tittle": "签到积分"
-      }]
+    }],
+    protection: {
+      "currentMoney": "¥100.00",
+      "protectionNum": "0",
+      "currentIntegral": "5000"
+    }
   },
   /**
    * 生命周期函数--监听页面加载
@@ -94,7 +99,7 @@ Page({
   },
 
   // 流行模块点击事件
-  onPopularClick:function(){
+  onPopularClick: function() {
     wx.navigateTo({
       url: './collectToHome/collectToHome',
     })

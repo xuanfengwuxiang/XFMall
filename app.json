@@ -3,7 +3,11 @@
     "pages/home/home",
     "pages/find/find",
     "pages/me/me",
-    "pages/home/collectToHome/collectToHome"
+    "pages/home/collectToHome/collectToHome",
+    "pages/home/childComponents/myProtection/myProtection",
+    "pages/home/currentMoney/currentMoney",
+    "pages/home/protectionNum/protectionNum",
+    "pages/home/currentIntegral/currentIntegral"
   ],
   "tabBar": {
     "selectedColor": "#EE7A77",

@@ -10,3 +10,7 @@
 <view class="popular" bindtap="onPopularClick">
   <image src="/images/home/ic_popular.png" class="popular" mode="scaleToFill" />
 </view>
+
+<!-- 我的环保 -->
+<myProtection currentMoney="{{protection.currentMoney}}" protectionNum="{{protection.protectionNum}}" currentIntegral="{{protection.currentIntegral}}" />
+
