@@ -1,4 +1,12 @@
 <!--首页-->
 
 <!-- 轮播图 -->
-<banner list="{{banners}}" bannerHeight="350rpx"/>
+<banner list="{{banners}}" bannerHeight="350rpx" />
+
+<!-- 推荐数据 -->
+<recommend list="{{recommends}}" />
+
+<!-- 流行 -->
+<view class="popular" bindtap="onPopularClick">
+  <image src="/images/home/ic_popular.png" class="popular" mode="scaleToFill" />
+</view>

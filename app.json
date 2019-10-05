@@ -2,7 +2,8 @@
   "pages": [
     "pages/home/home",
     "pages/find/find",
-    "pages/me/me"
+    "pages/me/me",
+    "pages/home/collectToHome/collectToHome"
   ],
   "tabBar": {
     "selectedColor": "#EE7A77",
