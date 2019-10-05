@@ -2,6 +2,7 @@
 
 .my_protection {
   margin-top: 20rpx;
+  margin-left: 10rpx;
 }
 
 .my_protection_tittle {
@@ -9,17 +10,20 @@
   align-items: center;
 }
 
-.my_protection_content{
-  display: flex;
+.my_protection_content {
   margin-top: 10rpx;
-}
-
-.my_protection_content_item{
-  flex:1;
-  text-align: center;
-  background-color: #FBE4A2;
   margin-left: 70rpx;
   margin-right: 70rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.my_protection_content_item {
+  text-align: center;
+  background-color: #fbe4a2;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
 }
 
 .my_protection image {
@@ -28,5 +32,5 @@
 }
 
 .my_protection text {
-  font-size: 20rpx;  
+  font-size: 20rpx;
 }

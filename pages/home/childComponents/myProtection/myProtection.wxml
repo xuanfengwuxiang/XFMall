@@ -7,7 +7,7 @@
 
   <view class="my_protection_content">
 
-    <view class="my_protection_content_item" bindtap="onMoneyClick">
+    <view class="my_protection_content_item" bindtap="onMoneyClick" >
       <text>{{currentMoney}}</text>
       <view>
         <text>当前环保金</text>
