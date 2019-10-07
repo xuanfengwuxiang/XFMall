@@ -2,7 +2,7 @@
 <view class="recommend">
   <block wx:for="{{list}}" wx:key="{{index}}">
 
-    <view class="recommend_item">
+    <view class="recommend_item" bindtap="onItemClick" data-index="{{index}}">
       <image src="{{item.image}}" />
       <view>
         <text>{{item.tittle}}</text>

@@ -32,19 +32,19 @@ Component({
 
     onMoneyClick: function(){
       wx.navigateTo({
-        url: './currentMoney/currentMoney',
+        url: './myProtection/currentMoney/currentMoney',
       })
     },
 
     onNumClick: function () {
       wx.navigateTo({
-        url: './protectionNum/protectionNum',
+        url: './myProtection/protectionNum/protectionNum',
       })
     },
 
     onIntegralClick: function () {
       wx.navigateTo({
-        url: './currentIntegral/currentIntegral',
+        url: './myProtection/currentIntegral/currentIntegral',
       })
     },
   }

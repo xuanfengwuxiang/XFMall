@@ -80,5 +80,43 @@ Page({
    */
   onShareAppMessage: function() {
 
+  },
+  onItemClick(event) {
+    var index = event.currentTarget.dataset.index;
+    switch (this.data.myList[index].name) {
+      case "我的订单":
+        wx.navigateTo({
+          url: '/pages/me/myOrder/myOrder',
+        })
+        break;
+      case "我的积分":
+        wx.navigateTo({
+          url: '/pages/me/myIntegral/myIntegral',
+        })
+        break;
+      case "环保金提现":
+        wx.navigateTo({
+          url: '/pages/me/toCash/toCash',
+        })
+        break;
+      case "关于我们":
+        wx.navigateTo({
+          url: '/pages/me/aboutUs/aboutUs',
+        })
+        break;
+      case "帮助中心":
+        wx.navigateTo({
+          url: '/pages/me/help/help',
+        })
+        break;
+      case "设置":
+        wx.navigateTo({
+          url: '/pages/me/setting/setting',
+        })
+        break;
+      default:
+
+        break;
+    }
   }
 })

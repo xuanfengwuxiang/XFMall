@@ -10,7 +10,7 @@
 
 <!-- 功能列表 -->
 <view wx:for="{{myList}}" wx:key="{{index}}">
-  <view style="height:120rpx;display:flex;align-items:center;border-bottom:1rpx solid #eeeeee;" >
+  <view style="height:120rpx;display:flex;align-items:center;border-bottom:1rpx solid #eeeeee;" bindtap="onItemClick" data-index="{{index}}">
     <image src="{{item.icon}}" style="width:50rpx;height:50rpx;margin-left:20rpx;" />
 
     <text style="margin-left:20rpx;font-size:25rpx;colot:#333333;">{{item.name}}</text>
