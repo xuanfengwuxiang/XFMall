@@ -1,2 +1,19 @@
-<!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<!--我的-->
+
+<!-- 登陆模块 -->
+<view style="height:300rpx;background-color:#A8E2FC;display:flex;align-items:center;">
+
+  <image src="https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/default_photo.png" style="width:100rpx;height:100rpx;margin-left:50rpx" />
+
+  <text style="margin-left:50rpx">请先登录</text>
+</view>
+
+<!-- 功能列表 -->
+<view wx:for="{{myList}}" wx:key="{{index}}">
+  <view style="height:120rpx;display:flex;align-items:center;border-bottom:1rpx solid #eeeeee;" >
+    <image src="{{item.icon}}" style="width:50rpx;height:50rpx;margin-left:20rpx;" />
+
+    <text style="margin-left:20rpx;font-size:25rpx;colot:#333333;">{{item.name}}</text>
+  </view>
+
+</view>

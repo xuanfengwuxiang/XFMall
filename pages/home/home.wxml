@@ -15,4 +15,4 @@
 <myProtection currentMoney="{{protection.currentMoney}}" protectionNum="{{protection.protectionNum}}" currentIntegral="{{protection.currentIntegral}}" />
 
 <!-- 最近回收点 -->
-<nearestPlace nearestPlace="{{nearstPlace.nearestPlace}}" placeDetail="{{nearstPlace.placeDetail}}"  distance = "{{nearstPlace.distance}} "/>
+<nearestPlace nearestPlace="{{nearstPlace.nearestPlace}}" placeDetail="{{nearstPlace.placeDetail}}" distance="{{nearstPlace.distance}} " />

@@ -32,5 +32,5 @@
 }
 
 .my_protection text {
-  font-size: 20rpx;
+  font-size: 25rpx;
 }

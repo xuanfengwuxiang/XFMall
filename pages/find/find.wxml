@@ -1,2 +1,11 @@
-<!--pages/find/find.wxml-->
-<text>pages/find/find.wxml</text>
+<!--发现 界面-->
+
+<view class="activity_tittle">
+  <text>活动</text>
+  <text style="font-size:20rpx">更多活动</text>
+</view>
+
+<image src="/images/home/ic_banner_1.jpg" class="activity_content"/>
+
+<tab tittles="{{tab_tittle}}" bind:itemClick = "tabClick"/>
+

@@ -1,0 +1,24 @@
+/* tab样式 */
+
+.tab {
+  display: flex;
+}
+
+.tab_item {
+  flex: 1;
+  text-align: center;
+}
+
+.tab_item text{
+    font-size: 24rpx;
+}
+
+.active {
+  color: #ee7a77;
+}
+
+.active text {
+  font-size: 30rpx;
+  padding-bottom: 12rpx;
+  border-bottom: #ee7a77 solid 8rpx;
+}

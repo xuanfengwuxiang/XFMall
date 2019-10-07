@@ -1,0 +1,8 @@
+<!--tab 自定义控件-->
+<view class="tab">
+  <block wx:for="{{tittles}}" wx:key="{{index}}">
+    <view class='tab_item {{currentIndex==index?"active":""}}' bindtap="onItemClick" data-index="{{index}}">
+      <text>{{item}}</text>
+    </view>
+  </block>
+</view>
