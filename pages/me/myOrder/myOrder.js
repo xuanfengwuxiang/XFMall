@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    "currentIndex": 0,
+    "tittles": ["门店回收","上门回收"]
   },
 
   /**
@@ -62,5 +63,14 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  onTypeClick:function(event){
+    
+    var index = event.currentTarget.dataset.index;
+
+    this.setData({
+      currentIndex: index
+    });
   }
 })

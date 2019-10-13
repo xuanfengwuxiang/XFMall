@@ -1,11 +1,16 @@
 <!--我的-->
 
 <!-- 登陆模块 -->
-<view style="height:300rpx;background-color:#A8E2FC;display:flex;align-items:center;">
+<view class="login" style="background:url('/images/me/ic_login_bg.jpg');">
 
-  <image src="https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/default_photo.png" style="width:100rpx;height:100rpx;margin-left:50rpx" />
+  <image src="/images/me/ic_head_default.jpg" style="width:100rpx;height:100rpx;margin-left:50rpx" />
 
-  <text style="margin-left:50rpx">请先登录</text>
+  <view style="margin-left:25rpx">
+    <text style="color:#333333">个人中心</text>
+    <view>
+      <text style="font-size:24rpx;color:#666666;">请先登录</text>
+    </view>
+  </view>
 </view>
 
 <!-- 功能列表 -->

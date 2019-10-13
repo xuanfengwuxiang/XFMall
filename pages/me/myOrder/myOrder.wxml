@@ -1,2 +1,11 @@
-<!--pages/me/myOrder/myOrder.wxml-->
-<text>pages/me/myOrder/myOrder.wxml</text>
+<!--我的订单界面-->
+
+<!-- 回收类型 -->
+<view class='type'>
+  <block wx:for="{{tittles}}" wx:key="{{index}}">
+
+    <view class='type_item {{currentIndex==index?"active":""}}' bindtap="onTypeClick" data-index="{{index}}">
+      <text>{{item}}</text>
+    </view>
+  </block>
+</view>

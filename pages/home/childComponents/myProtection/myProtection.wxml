@@ -15,12 +15,12 @@
 
     </view>
 
-    <view class="my_protection_content_item" bindtap="onNumClick">
+    <!-- <view class="my_protection_content_item" bindtap="onNumClick">
       <text>{{protectionNum}}</text>
       <view>
         <text>环保次数</text>
       </view>
-    </view>
+    </view> -->
 
     <view class="my_protection_content_item" bindtap="onIntegralClick">
       <text>{{currentIntegral}}</text>

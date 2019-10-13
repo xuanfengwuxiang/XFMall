@@ -1,1 +1,31 @@
-/* pages/me/myOrder/myOrder.wxss */
+/* 我的订单界面 样式 */
+
+.type {
+  display: flex;
+}
+
+.type_item {
+  flex: 1;
+  text-align: center;
+}
+
+.type_item text {
+  color: #888;
+  border-radius: 10rpx;
+  display: inline-block;
+  margin: 15rpx;
+  padding-left: 100rpx;
+  padding-right: 100rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  box-shadow: 0rpx -1rpx 3rpx 3rpx #eee;
+}
+
+.active{
+  color:  #333333
+}
+.active text {
+  color: #333333
+}
+
+
