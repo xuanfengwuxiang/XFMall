@@ -1,1 +1,27 @@
-/* pages/me/setting/setting.wxss */
+/* 设置界面 样式 */
+
+.tel {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.logout {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-radius: 300rpx;
+  background-color: #ff0;
+
+}
+
+
+button::after{
+    outline:none;
+    border:0;
+}
+
+
+

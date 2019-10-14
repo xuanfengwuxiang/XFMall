@@ -1,2 +1,15 @@
-<!--pages/me/setting/setting.wxml-->
-<text>pages/me/setting/setting.wxml</text>
+<!--设置界面-->
+
+<!-- 客服电话 -->
+<view class="tel">
+
+  <text>联系客服</text>
+
+  <text>025-23457890</text>
+</view>
+
+<text class="tel">周一至周日9:00-21:00</text>
+
+
+<button  class="logout" >退出登陆</button>
+
