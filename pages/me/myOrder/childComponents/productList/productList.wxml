@@ -1,0 +1,19 @@
+<!--商品列表 自定义控件-->
+<view class="productList">
+
+  <block wx:for="{{list}}" wx:key="{{index}}">
+    <view class="productList_item" bindtap="onProductItemClick" data-index="{{index}}">
+      <image src="{{item.icon}}" class="productList_item_image" />
+
+      <view class="productList_item_right" mode="scaleToFill">
+        <text>{{item.productName}}</text>
+
+        <view class="total_money_and_num">
+          <text>{{item.totalPrice+"元"}}</text>
+          <text class="num">{{"x"+item.pruductNum+item.prodectUnit}}</text>
+        </view>
+      </view>
+    </view>
+
+  </block>
+</view>

@@ -8,64 +8,129 @@ Page({
     "currentIndex": 0,
     "tittles": ["门店回收", "上门回收"],
     "orders": [{
-      "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-      "productName": "塑料瓶",
-      "pruductNum": "20",
-      "prodectUnit": "个",
-      "totalPrice": "33"
+      "productList": [{
+        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
+        "productName": "塑料瓶",
+        "pruductNum": "20",
+        "prodectUnit": "个",
+        "totalPrice": "33"
+      }, {
+        "icon": "http://img.weiye.me/zcimgdir/thumb/t_14966428515934f523ae28a.png",
+        "productName": "铁块",
+        "pruductNum": "20",
+        "prodectUnit": "斤",
+        "totalPrice": "33"
+      }, {
+        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
+        "productName": "塑料瓶",
+        "pruductNum": "20",
+        "prodectUnit": "个",
+        "totalPrice": "33"
+      }]
     }, {
-      "icon": "http://img.weiye.me/zcimgdir/thumb/t_14966428515934f523ae28a.png",
-      "productName": "塑料瓶",
-      "pruductNum": "20",
-      "prodectUnit": "个",
-      "totalPrice": "33"
-    }, {
-      "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-      "productName": "塑料瓶",
-      "pruductNum": "20",
-      "prodectUnit": "个",
-      "totalPrice": "33"
+      "productList": [{
+        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
+        "productName": "塑料瓶",
+        "pruductNum": "20",
+        "prodectUnit": "个",
+        "totalPrice": "33"
+      }, {
+        "icon": "http://img.weiye.me/zcimgdir/thumb/t_14966428515934f523ae28a.png",
+        "productName": "塑料瓶",
+        "pruductNum": "20",
+        "prodectUnit": "个",
+        "totalPrice": "33"
+      }, {
+        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
+        "productName": "塑料瓶",
+        "pruductNum": "20",
+        "prodectUnit": "个",
+        "totalPrice": "33"
+      }]
     }],
     "orders2": [{
-      "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/scratchComfort.png",
-      "productName": "萨芬",
-      "pruductNum": "20",
-      "prodectUnit": "个",
-      "totalPrice": "33"
+      "productList": [{
+        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/scratchComfort.png",
+        "productName": "萨芬",
+        "pruductNum": "20",
+        "prodectUnit": "个",
+        "totalPrice": "33"
+      }, {
+        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/scratchComfort.png",
+        "productName": "塑料瓶4444",
+        "pruductNum": "20",
+        "prodectUnit": "个",
+        "totalPrice": "33"
+      }, {
+        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
+        "productName": "塑料瓶阿斯顿发生",
+        "pruductNum": "20",
+        "prodectUnit": "个",
+        "totalPrice": "33"
+      }]
     }, {
-      "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/scratchComfort.png",
-      "productName": "塑料瓶4444",
-      "pruductNum": "20",
-      "prodectUnit": "个",
-      "totalPrice": "33"
-    }, {
-      "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-      "productName": "塑料瓶阿斯顿发生",
-      "pruductNum": "20",
-      "prodectUnit": "个",
-      "totalPrice": "33"
+      "productList": [{
+        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/scratchComfort.png",
+        "productName": "萨芬",
+        "pruductNum": "20",
+        "prodectUnit": "个",
+        "totalPrice": "33"
+      }, {
+        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/scratchComfort.png",
+        "productName": "塑料瓶4444",
+        "pruductNum": "20",
+        "prodectUnit": "个",
+        "totalPrice": "33"
+      }, {
+        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
+        "productName": "塑料瓶阿斯顿发生",
+        "pruductNum": "20",
+        "prodectUnit": "个",
+        "totalPrice": "33"
+      }]
     }],
     "orders3": [{
-      "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-      "productName": "塑料瓶",
-      "pruductNum": "20",
-      "prodectUnit": "个",
-      "totalPrice": "33"
+      "productList": [{
+        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
+        "productName": "塑料瓶",
+        "pruductNum": "20",
+        "prodectUnit": "个",
+        "totalPrice": "33"
+      }, {
+        "icon": "http://img.weiye.me/zcimgdir/thumb/t_14966428515934f523ae28a.png",
+        "productName": "铁块",
+        "pruductNum": "20",
+        "prodectUnit": "斤",
+        "totalPrice": "33"
+      }, {
+        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
+        "productName": "塑料瓶",
+        "pruductNum": "20",
+        "prodectUnit": "个",
+        "totalPrice": "33"
+      }]
     }, {
-      "icon": "http://img.weiye.me/zcimgdir/thumb/t_14966428515934f523ae28a.png",
-      "productName": "塑料瓶",
-      "pruductNum": "20",
-      "prodectUnit": "个",
-      "totalPrice": "33"
-    }, {
-      "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-      "productName": "塑料瓶",
-      "pruductNum": "20",
-      "prodectUnit": "个",
-      "totalPrice": "33"
+      "productList": [{
+        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
+        "productName": "塑料瓶",
+        "pruductNum": "20",
+        "prodectUnit": "个",
+        "totalPrice": "33"
+      }, {
+        "icon": "http://img.weiye.me/zcimgdir/thumb/t_14966428515934f523ae28a.png",
+        "productName": "塑料瓶",
+        "pruductNum": "20",
+        "prodectUnit": "个",
+        "totalPrice": "33"
+      }, {
+        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
+        "productName": "塑料瓶",
+        "pruductNum": "20",
+        "prodectUnit": "个",
+        "totalPrice": "33"
+      }]
     }]
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -133,9 +198,9 @@ Page({
 
     switch (index) {
       case 0:
-      this.setData({
-        orders: this.data.orders3
-      });
+        this.setData({
+          orders: this.data.orders3
+        });
         break;
 
       case 1:
@@ -150,9 +215,15 @@ Page({
     }
 
   },
-
   // 订单列表item点击事件
   onOrderItemClick: function(event) {
 
+    var index = event.currentTarget.dataset.index;
+    var productList = this.data.orders[index].productList;
+    var jsonString = JSON.stringify(productList);
+    wx.navigateTo({
+      url: 'orderDetail/orderDetail?productList=' + jsonString,
+    })
   }
+
 })

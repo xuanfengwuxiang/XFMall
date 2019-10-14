@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "productList": "./childComponents/productList/productList"
+  },
+  "navigationBarTitleText": "我的订单",
+  "backgroud-color":"#eee"
 }

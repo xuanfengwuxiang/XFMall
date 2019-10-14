@@ -1,6 +1,11 @@
 /* 我的订单界面 样式 */
 
+page {
+  background-color: #eee;
+}
+
 .type {
+  background-color: #fff;
   display: flex;
 }
 
@@ -31,27 +36,16 @@
 
 /* 订单列表 */
 
-/* .orderList {
-  display: flex;
-} */
-
-.orderList_item {
-  padding: 30rpx;
-  display: flex;
-  text-align: center;
-  border-bottom: 1rpx solid #eeeeee
-}
-
-.orderList_item_image {
-  width: 60rpx;
-  height: 60rpx;
-  border-radius: 50%;
-}
-
-.orderList_item_right{
-  width: 100%;
-  margin-left: 30rpx;
+.orders {
+  margin-top: 20rpx;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.orders_item {
+  width: 100%;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  background-color: #fff;
 }
