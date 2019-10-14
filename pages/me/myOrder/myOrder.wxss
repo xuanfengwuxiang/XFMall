@@ -21,11 +21,37 @@
   box-shadow: 0rpx -1rpx 3rpx 3rpx #eee;
 }
 
-.active{
-  color:  #333333
+.active {
+  color: #333;
 }
+
 .active text {
-  color: #333333
+  color: #333;
 }
 
+/* 订单列表 */
 
+/* .orderList {
+  display: flex;
+} */
+
+.orderList_item {
+  padding: 30rpx;
+  display: flex;
+  text-align: center;
+  border-bottom: 1rpx solid #eeeeee
+}
+
+.orderList_item_image {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+
+.orderList_item_right{
+  width: 100%;
+  margin-left: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

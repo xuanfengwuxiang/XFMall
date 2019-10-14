@@ -9,3 +9,21 @@
     </view>
   </block>
 </view>
+
+
+<!-- 订单列表 -->
+<view class="orderList">
+
+  <block wx:for="{{orders}}" wx:key="{{index}}">
+    <view class="orderList_item" bindtap="onOrderItemClick" data-index="{{index}}">
+      <image src="{{item.icon}}" class="orderList_item_image" />
+
+      <view class="orderList_item_right" mode="scaleToFill">
+        <text>{{item.productName+item.pruductNum+item.prodectUnit}}</text>
+
+        <text>{{item.totalPrice+"元"}}</text>
+      </view>
+    </view>
+
+  </block>
+</view>
