@@ -1,2 +1,42 @@
-<!--pages/me/help/help.wxml-->
-<text>pages/me/help/help.wxml</text>
+<!--帮助中心-->
+
+<!-- 客服 -->
+<view class="service">
+  <view class="service_item" style="background-color:#EADFDE">
+
+    <text>电话客服</text>
+    <text>9:00-21:00</text>
+
+  </view>
+
+  <view class="service_item" style="background-color:#BFDAD5">
+
+    <text>在线客服</text>
+    <text>24小时专属客服</text>
+
+  </view>
+
+</view>
+
+
+<!-- 常见问题 -->
+<text style="margin-top:30rpx;margin-left:30rpx">常见问题</text>
+
+<view class="problems">
+  <block wx:for="{{problems}}" wx:key="{{index}}">
+
+    <view class="problem_item">
+
+      <!-- 问题名 -->
+      <view class="problem_item_tittle" bindtap="onProblemTittleClick" data-index="{{index}}">
+        <text>{{(index+1)+"、"+item.tittle}}</text>
+        <image src='{{item.isShow?"/images/me/ic_arrow_down.png":"/images/me/ic_arrow_up.png"}}' />
+
+      </view>
+
+      <text class="{{item.isShow?'view_show':'view_hide'}}">{{item.content}}</text>
+
+    </view>
+  </block>
+
+</view>

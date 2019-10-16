@@ -1,1 +1,54 @@
-/* pages/me/help/help.wxss */
+/* 帮助中心 样式 */
+
+.service {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.service_item {
+  align-items: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+
+.problems{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+
+}
+
+.problem_item{
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+.problem_item_tittle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.problem_item_tittle image{
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.view_hide{
+
+    display: none;
+
+}
+
+.view_show{
+    margin-top: 5rpx;
+    font-size: 24rpx;
+    display: block;
+
+}
