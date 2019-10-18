@@ -2,7 +2,7 @@
 
 <!-- 客服 -->
 <view class="service">
-  <view class="service_item" style="background-color:#EADFDE">
+  <view class="service_item" style="background-color:#EADFDE" bindtap="onTelClick">
 
     <text>电话客服</text>
     <text>9:00-21:00</text>
@@ -20,7 +20,7 @@
 
 
 <!-- 常见问题 -->
-<text style="margin-top:30rpx;margin-left:30rpx">常见问题</text>
+<text style="margin-top:60rpx;margin-left:30rpx">常见问题</text>
 
 <view class="problems">
   <block wx:for="{{problems}}" wx:key="{{index}}">
@@ -34,9 +34,11 @@
 
       </view>
 
-      <text class="{{item.isShow?'view_show':'view_hide'}}">{{item.content}}</text>
+      <text class="answer" wx:if="{{item.isShow}}">{{item.content}}</text>
 
     </view>
   </block>
 
 </view>
+
+

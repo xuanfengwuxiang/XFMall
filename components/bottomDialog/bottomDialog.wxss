@@ -1,0 +1,49 @@
+/* 自定义底部弹窗 */
+
+.pop_screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+
+.pop_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2000;
+  background: white;
+  height: 350rpx;
+  /* transform: translateY(300%); *//* 弹框弹出距离，与弹框布局高度有关，如300%表示弹起距离为3倍弹窗高度 */
+  transition: all 0.4s ease;
+  border-radius: 20rpx;
+  box-shadow: 0px 3px 3px 2px gainsboro;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.pop_content text {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.pop_call {
+  border-top: 1rpx solid #eee;
+}
+
+.pop_cancel {
+  border-top: 15rpx solid #eee;
+}

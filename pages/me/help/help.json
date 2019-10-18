@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "bottomDialog": "/components/bottomDialog/bottomDialog"
+  },
+  "navigationBarTitleText": "常见问题"
 }

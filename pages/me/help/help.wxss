@@ -18,37 +18,32 @@
   margin-right: 30rpx;
 }
 
-
-.problems{
+.problems {
   margin-left: 30rpx;
   margin-right: 30rpx;
   margin-top: 30rpx;
-
 }
 
-.problem_item{
+.problem_item {
   margin-top: 15rpx;
   margin-bottom: 15rpx;
 }
-.problem_item_tittle{
+
+.problem_item_tittle {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.problem_item_tittle image{
+
+.problem_item_tittle image {
   width: 30rpx;
   height: 30rpx;
 }
 
-.view_hide{
-
-    display: none;
-
+.answer {
+  margin-top: 5rpx;
+  font-size: 24rpx;
+  display: block;
 }
 
-.view_show{
-    margin-top: 5rpx;
-    font-size: 24rpx;
-    display: block;
 
-}

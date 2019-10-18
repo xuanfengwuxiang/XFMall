@@ -1,0 +1,13 @@
+
+<!-- 底部弹窗 -->
+<!-- 蒙层 -->
+<view class="pop_screen" bindtap="hideModel" wx:if="{{isShow}}">
+
+</view>
+
+<view class="pop_content" wx:if="{{isShow}}">
+  <text>{{tittle}}</text>
+  <text class="pop_call" bindtap="call" data-content="{{content}}">{{content}}</text>
+  <text class="pop_cancel" bindtap="hideModel">取消</text>
+
+</view>

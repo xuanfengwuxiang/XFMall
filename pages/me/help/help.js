@@ -13,7 +13,7 @@ Page({
       "tittle": "上面回收免费吗？",
       "content": "我们不收取费用",
       "isShow": false
-    }]
+    }],
   },
 
   /**
@@ -83,5 +83,27 @@ Page({
     this.setData({
       problems: newProblems
     });
-  }
+  },
+
+  //电话客服点击
+  onTelClick: function(event) {
+
+    var tel = event.currentTarget.dataset.tel;
+    wx.makePhoneCall({
+      phoneNumber: "13770583585",
+      success: function () {
+
+      },
+      fail: function () {
+        wx.showToast({
+          title: '拨打错误',
+        })
+      }
+      
+    })
+  },
+
+
+
+
 })
