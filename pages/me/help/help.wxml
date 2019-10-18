@@ -20,7 +20,9 @@
 
 
 <!-- 常见问题 -->
-<text style="margin-top:60rpx;margin-left:30rpx">常见问题</text>
+<view class="tittle">
+  <text>常见问题</text>
+</view>
 
 <view class="problems">
   <block wx:for="{{problems}}" wx:key="{{index}}">
@@ -40,5 +42,3 @@
   </block>
 
 </view>
-
-

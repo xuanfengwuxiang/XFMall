@@ -118,5 +118,12 @@ Page({
 
         break;
     }
+  },
+
+  //登录
+  login: function() {
+    wx.navigateTo({
+      url: '/pages/me/login/login',
+    })
   }
 })

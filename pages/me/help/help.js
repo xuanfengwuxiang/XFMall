@@ -91,15 +91,13 @@ Page({
     var tel = event.currentTarget.dataset.tel;
     wx.makePhoneCall({
       phoneNumber: "13770583585",
-      success: function () {
+      success: function() {
 
       },
-      fail: function () {
-        wx.showToast({
-          title: '拨打错误',
-        })
+      fail: function() {
+
       }
-      
+
     })
   },
 

@@ -1,0 +1,39 @@
+/* 登录界面 */
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200rpx;
+}
+
+.top image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.account {
+  margin-top: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account input {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  width: 100%;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  border-bottom: 1rpx solid #77ee87;
+}
+
+.login {
+  margin-top: 60rpx;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  color: white;
+  background: #55cc65;
+  text-align: center;
+}

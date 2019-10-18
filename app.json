@@ -19,7 +19,8 @@
     "pages/home/recommend/inviteGift/inviteGift",
     "pages/home/recommend/integralMall/integralMall",
     "pages/home/recommend/signIntegral/signIntegral",
-    "pages/me/myOrder/orderDetail/orderDetail"
+    "pages/me/myOrder/orderDetail/orderDetail",
+    "pages/me/login/login"
   ],
   "tabBar": {
     "selectedColor": "#EE7A77",

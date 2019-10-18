@@ -1,0 +1,19 @@
+<!--登录界面-->
+
+
+<view class="top">
+  <image src="/images/me/ic_head_default.jpg"/>
+</view>
+
+<!-- 账号 -->
+<view class="account" >
+    <input placeholder="请输入账号" maxlength="11" type="tel" bindinput="getAccount"/>
+</view>
+
+<!-- 密码 -->
+<view class="account" >
+    <input placeholder="请输入密码" bindinput="getPassword" password="true"/>
+</view>
+
+
+<button class="login" bindtap="login">登录</button>
