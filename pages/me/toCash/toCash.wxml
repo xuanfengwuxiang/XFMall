@@ -1,2 +1,32 @@
-<!--pages/me/toCash/toCash.wxml-->
-<text>环保金提现</text>
+<!--环保金提现界面-->
+
+<view class="tittle">
+
+  <text>环保金余额（元）</text>
+
+  <text>46.58</text>
+</view>
+
+
+<view class="to_cash">
+
+  <view class="to_cash_left">
+    <image src="/images/me/ic_to_cash.png" />
+
+    <text>提现</text>
+  </view>
+
+  <image src="/images/me/ic_arrow_right.png"/>
+</view>
+
+
+<view class="to_cash">
+
+  <view class="to_cash_left">
+    <image src="/images/me/ic_to_wx_cash.png" />
+
+    <text>转入微信钱包</text>
+  </view>
+
+  <image src="/images/me/ic_arrow_right.png"/>
+</view>

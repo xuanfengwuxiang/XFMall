@@ -1,1 +1,35 @@
-/* pages/me/toCash/toCash.wxss */
+/* 环保金提现界面 样式*/
+
+.tittle {
+  display: flex;
+  flex-direction: column;
+  background: rgb(0, 119, 255);
+  padding-top: 30rpx;
+  padding-bottom: 20rpx;
+  padding-left: 30rpx;
+}
+
+.tittle text {
+  color: white;
+  padding-bottom: 30rpx;
+}
+
+.to_cash {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  align-items: center;
+  padding-top: 30rpx;
+  padding-bottom: 15rpx;
+}
+
+.to_cash_left {
+  display: flex;
+}
+
+.to_cash image {
+  width: 50rpx;
+  margin-right: 30rpx;
+  height: 50rpx;
+}
