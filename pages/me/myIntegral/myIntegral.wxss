@@ -1,1 +1,21 @@
-/* pages/me/myIntegral/myIntegral.wxss */
+/* 积分明细界面 样式 */
+
+.integral_item{
+  padding: 30rpx;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #eee
+  
+}
+
+.integral_add{
+  color: green
+}
+
+.integral_reduce{
+  color: red
+}
+

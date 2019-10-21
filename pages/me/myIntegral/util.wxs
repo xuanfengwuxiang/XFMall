@@ -1,0 +1,7 @@
+var isReduce = function(val) {
+  if (val.indexOf("-") >= 0) {
+    return true;
+  }
+  return false;
+}
+module.exports.isReduce = isReduce;

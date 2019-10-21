@@ -1,2 +1,19 @@
-<!--pages/me/myIntegral/myIntegral.wxml-->
-<text>pages/me/myIntegral/myIntegral.wxml</text>
+<!--积分明细-->
+
+<!-- 引入wxs脚本 -->
+<wxs src="util.wxs" module="util" />
+
+
+<view>
+  <block wx:for="{{integralList}}" wx:key="{{index}}">
+    <view class="integral_item">
+
+      <text>{{item.type}}</text>
+
+      <text style='{{util.isReduce(item.integral)?"color:red;":"color:green"}}'>{{item.integral}}</text>
+
+    </view>
+
+  </block>
+
+</view>
