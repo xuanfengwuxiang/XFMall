@@ -37,3 +37,15 @@
   background: #55cc65;
   text-align: center;
 }
+
+.tips {
+  width: 100%;
+  text-align: center;
+  margin-top: 100rpx;
+
+}
+
+.tips text {
+  color: #085024;
+  font-size: 24rpx;
+}

@@ -1,4 +1,7 @@
 // pages/me/login/login.js
+
+
+
 Page({
 
   /**
@@ -6,7 +9,8 @@ Page({
    */
   data: {
     "account": "",
-    "password": ""
+    "password": "",
+    "isLogin": true
   },
 
   /**
@@ -65,11 +69,27 @@ Page({
 
   },
 
-  //登录
+  //登录 注册
   login: function(event) {
-    wx.showToast({
-      title: '' + this.data.account + this.data.password,
-    })
+
+    if (this.data.isLogin) { //登录
+
+      wx.showToast({
+        title: '登录' + this.data.account + this.data.password,
+      });
+
+      wx.login({
+        success:res=>{
+          console.log(res);
+        }
+      })
+
+    } else { //注册
+      wx.showToast({
+        title: '注册' + this.data.account + this.data.password,
+      })
+    }
+
   },
 
   //获取账号
@@ -80,5 +100,14 @@ Page({
   //获取密码
   getPassword: function(event) {
     this.data.password = event.detail.value;
+  },
+
+  //切换输入模式
+  changeInputType: function(event) {
+    var origin = this.data.isLogin;
+    origin = !origin;
+    this.setData({
+      isLogin: origin
+    })
   }
 })

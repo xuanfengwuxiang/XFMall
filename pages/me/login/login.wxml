@@ -2,18 +2,23 @@
 
 
 <view class="top">
-  <image src="/images/me/ic_head_default.jpg"/>
+  <image src="/images/me/ic_head_default.jpg" />
 </view>
 
 <!-- 账号 -->
-<view class="account" >
-    <input placeholder="请输入账号" maxlength="11" type="tel" bindinput="getAccount"/>
+<view class="account">
+  <input placeholder="{{isLogin?'请输入账号':'请输入手机号'}}" maxlength="11" type="number" bindinput="getAccount" />
 </view>
 
 <!-- 密码 -->
-<view class="account" >
-    <input placeholder="请输入密码" bindinput="getPassword" password="true"/>
+<view class="account">
+  <input placeholder="请输入密码" bindinput="getPassword" password="true" />
 </view>
 
 
-<button class="login" bindtap="login">登录</button>
+<button class="login" bindtap="login">{{isLogin?'登录':'注册'}}</button>
+
+<view class="tips">
+  <text  bindtap="changeInputType">{{isLogin?'没有账号?点击注册':'已有账号,点击登录'}}</text>
+
+</view>
