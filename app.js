@@ -1,6 +1,6 @@
 //app.js
 App({
-  onLaunch: function () {
+  onLaunch: function() {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -35,6 +35,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    "themeColor":"#EE7A77"
+    themeColor: "#EE7A77",
+    host: "http://192.168.31.195:8080"
   }
 })

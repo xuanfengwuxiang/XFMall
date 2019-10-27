@@ -1,5 +1,5 @@
 // pages/me/login/login.js
-
+const app = getApp()
 
 
 Page({
@@ -73,23 +73,48 @@ Page({
   login: function(event) {
 
     if (this.data.isLogin) { //登录
-
-      wx.showToast({
-        title: '登录' + this.data.account + this.data.password,
-      });
-
+      //先获取code，5分钟有效期
       wx.login({
-        success:res=>{
-          console.log(res);
+        success: res => {
+          if (res.code) {
+
+            //将code发送给服务器
+            wx.request({
+
+              url: app.globalData.host + '/me/login',
+              data: {
+                code: res.code,
+                tel: this.data.account,
+                password: this.data.password
+              },
+
+              success: res => {
+
+                if (res.statusCode === 200) { // 登录成功
+                  console.log(res.data.sessionId)
+                  wx.showToast({
+                    title: 'kk' + res.data.errorMsg,
+                  })
+
+                }
+
+              }
+            })
+
+            return;
+
+          }
+          console.log('获取用户登录态失败！' + res.errMsg);
         }
       })
 
-    } else { //注册
-      wx.showToast({
-        title: '注册' + this.data.account + this.data.password,
-      })
+      return;
     }
 
+    //注册
+    wx.showToast({
+      title: '注册' + this.data.account + this.data.password,
+    })
   },
 
   //获取账号
