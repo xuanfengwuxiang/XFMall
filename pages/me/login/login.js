@@ -72,6 +72,10 @@ Page({
   //登录 注册
   login: function(event) {
 
+    wx.showLoading({
+      title: '加载中',
+    })
+
     if (this.data.isLogin) { //登录
       //先获取code，5分钟有效期
       wx.login({
@@ -91,11 +95,17 @@ Page({
               success: res => {
 
                 if (res.statusCode === 200) { // 登录成功
-                  console.log(res.data.sessionId)
-                  wx.showToast({
-                    title: 'kk' + res.data.errorMsg,
-                  })
+                  if (res.data.isOk){
 
+                    wx.showToast({
+                      title: "登录成功",
+                    })
+                  }else{
+                    wx.showToast({
+                      title: res.data.errorMsg,
+                    })
+                  }
+                  
                 }
 
               }
@@ -105,12 +115,17 @@ Page({
 
           }
           console.log('获取用户登录态失败！' + res.errMsg);
+          wx.showToast({
+            title: '获取用户登录态失败！' + res.data.errorMsg,
+          })
         }
       })
 
+      wx.hideLoading();
       return;
     }
 
+    wx.hideLoading();
     //注册
     wx.showToast({
       title: '注册' + this.data.account + this.data.password,
