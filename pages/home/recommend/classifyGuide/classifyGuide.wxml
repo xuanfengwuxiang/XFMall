@@ -1,9 +1,8 @@
 <view class='logs'>
 
-  <view class='search'>
-
-
-
+  <view class='top' >
+    <text bindtap="bt_title" data-id="{{titleType}}" class="{{titleType?'select':'normal'}}">可回收物品</text>
+    <text bindtap="bt_title" class="{{!titleType?'select':'normal'}}">不可回收物品</text>
   </view>
 
   <!-- 主盒子 -->
@@ -14,6 +13,6 @@
     </view>
     <!-- 右盒子 -->
     <classifyGuideItem list="{{items}}" />
-    
+
   </view>
 </view>

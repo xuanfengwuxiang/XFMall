@@ -67,7 +67,8 @@ Page({
         title: "矿泉水",
         image: "/images/me/ic_head_default.jpg"
       },
-    ]
+    ],
+    titleType: true,
 
   },
 
@@ -86,13 +87,18 @@ Page({
   // 点击左选项
 
   bt_left(e) {
+    this.setData({
+      left_index: e.currentTarget.dataset.id.id,
+    })
+  },
 
+  //点击头部
+  bt_title(e) {
     this.setData({
 
-      left_index: e.currentTarget.dataset.id.id,
+      titleType: !this.data.titleType,
 
     })
-
-  },
+  }
 
 })
