@@ -1,5 +1,5 @@
 //app.js
-// 测试提交
+// 测试提交===
 App({
   onLaunch: function() {
     // 展示本地存储能力
