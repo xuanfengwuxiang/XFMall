@@ -1,1 +1,39 @@
-/* pages/home/classifyGuide/classifyGuide.wxss */
+.logs {
+  display: flex;
+  flex-direction: column;
+}
+
+.container123 {
+  margin-top: 20rpx;
+  width: 100vw;
+
+  display: flex;
+}
+
+.left {
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.left_container {
+  border-radius: 15rpx;
+  background-color: #eee;
+  width: 160rpx;
+  height: 160rpx;
+  margin-bottom: 5rpx;
+  text-align: center;
+  line-height: 160rpx;
+}
+
+.activityId {
+  border-radius: 15rpx;
+  line-height: 160rpx;
+  color: burlywood;
+  background-color: #eee;
+  width: 160rpx;
+  height: 160rpx;
+  margin-bottom: 5rpx;
+  text-align: center;
+}
+

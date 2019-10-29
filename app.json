@@ -21,6 +21,7 @@
     "pages/home/recommend/signIntegral/signIntegral",
     "pages/me/myOrder/orderDetail/orderDetail",
     "pages/me/login/login"
+
   ],
   "tabBar": {
     "selectedColor": "#EE7A77",

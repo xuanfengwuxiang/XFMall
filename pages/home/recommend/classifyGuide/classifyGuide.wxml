@@ -1,2 +1,19 @@
-<!--pages/home/classifyGuide/classifyGuide.wxml-->
-<text>pages/home/classifyGuide/classifyGuide.wxml</text>
+<view class='logs'>
+
+  <view class='search'>
+
+
+
+  </view>
+
+  <!-- 主盒子 -->
+  <view class="container123">
+    <!-- 左盒子 -->
+    <view class='left'>
+      <view class='{{left_index==item.id?"activityId":"left_container"}}' wx:for="{{list}}" wx:key="key" bindtap='bt_left' data-id="{{item}}">{{item.title}}</view>
+    </view>
+    <!-- 右盒子 -->
+    <classifyGuideItem list="{{items}}" />
+    
+  </view>
+</view>

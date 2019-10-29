@@ -1,0 +1,8 @@
+<view class='right'>
+
+  <view class="right_item" wx:for="{{list}}" wx:key="{{index}}">
+    <image src="{{item.image}}" mode="scaleToFill"></image>
+    <text>{{item.title}}</text>
+  </view>
+
+</view>

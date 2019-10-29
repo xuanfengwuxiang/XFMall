@@ -1,66 +1,98 @@
-// pages/home/classifyGuide/classifyGuide.js
+//logs.js
+
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
 
+    left_index: 1,
+
+    img_src: "",
+
+    list: [{
+
+        id: 1,
+
+        title: "塑料瓶",
+      },
+
+      {
+
+        id: 2,
+
+        title: "纺织物",
+
+      },
+
+      {
+
+        id: 3,
+
+        title: "纸类",
+
+      },
+
+      {
+
+        id: 4,
+
+        title: "金属类",
+      },
+
+      {
+
+        id: 5,
+
+        title: "其他",
+
+      },
+
+    ],
+    items: [{
+        title: "矿泉水",
+        image: "/images/me/ic_head_default.jpg"
+      },
+      {
+        title: "矿泉水",
+        image: "/images/me/ic_head_default.jpg"
+      },
+      {
+        title: "矿泉水",
+        image: "/images/me/ic_head_default.jpg"
+      },
+      {
+        title: "矿泉水",
+        image: "/images/me/ic_head_default.jpg"
+      },
+      {
+        title: "矿泉水",
+        image: "/images/me/ic_head_default.jpg"
+      },
+    ]
+
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
+  // 第一次进来加载
+
+  onLoad: function() {
+
+    this.setData({
+
+      left_index: this.data.list[0].id,
+
+    })
 
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
+  // 点击左选项
+
+  bt_left(e) {
+
+    this.setData({
+
+      left_index: e.currentTarget.dataset.id.id,
+
+    })
 
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })
