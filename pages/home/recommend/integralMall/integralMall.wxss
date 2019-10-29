@@ -1,1 +1,35 @@
 /* pages/home/integralMall/integralMall.wxss */
+
+.recommend {
+  background: #fff;
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+}
+
+.recommend image {
+  margin-left: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.recommend text {
+  font-size: 28rpx;
+  color: #48dfc1;
+  margin-left: 10rpx;
+}
+
+.goods_item {
+  background: white;
+  margin-top: 30rpx;
+}
+
+.title {
+  font-weight: 450;
+  margin-top: 10rpx;
+  color: #333;
+  font-size: 36rpx;
+  margin-left: 30rpx;
+}
+

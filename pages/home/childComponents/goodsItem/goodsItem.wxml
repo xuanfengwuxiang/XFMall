@@ -1,0 +1,11 @@
+<view class="item">
+  <block wx:key="key" wx:for="{{list}}">
+    <view class="goods_item_info">
+      <view class="goods_item_title">
+        <text class="goods_name">{{item.name}}</text>
+        <text class="score">{{item.score}}</text>
+      </view>
+      <image src="{{item.image}}" class="image" mode=""></image>
+    </view>
+  </block>
+</view>
