@@ -7,12 +7,16 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
+    //1、先从本地取出sessionId
+    const sessionId = wx.getStorageSync(this.globalData.key);
+
+    //2、判断sessionId是否有值
+    if (sessionId && sessionId.length !== 0) { //有sessionId,判断过期
+      this.checkLoginExpire(sessionId)
+    } else { //没有，登录
+      this.login()
+    }
+
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -34,9 +38,63 @@ App({
       }
     })
   },
+
+  //检查sessionId有没有过期
+  checkLoginExpire(sessionId) {
+    wx.request({
+      url: this.globalData.host + '/me/checkLogin',
+      method: 'POST',
+      header: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'token': sessionId
+      },
+      success: res => {
+
+        if (res.statusCode == 200) {
+          if (res.data.isOk) {
+            
+            this.globalData.isLoginSucess = true;
+          
+            this.globalData.userInfo = res.data.data;
+            wx.showToast({
+              title: '自动登录成功',
+            })
+            
+          } else {
+            this.globalData.isLoginSucess = false;
+            wx.showToast({
+              title: res.data.errorMsg + sessionId,
+            })
+          }
+        } else {
+          wx.showToast({
+            title: '接口失败',
+          })
+        }
+
+      },
+      fail: err => {
+
+      }
+    })
+
+  },
+
+  // 登录方法,本处暂不使用 账号登录.需前往登录界面
+  login() {
+    this.globalData.isLoginSucess = false;
+    wx.showToast({
+      title: '没有sessionId',
+    })
+  },
+
+  //全局数据
   globalData: {
     userInfo: null,
     themeColor: "#EE7A77",
-    host: "http://192.168.31.195:8080"
+    host: "http://192.168.31.195:8080",
+    sessionId: "",
+    key: "sessionId",
+    isLoginSucess: false
   }
 })

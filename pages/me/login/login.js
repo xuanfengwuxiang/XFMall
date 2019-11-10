@@ -95,17 +95,25 @@ Page({
               success: res => {
 
                 if (res.statusCode === 200) { // 登录成功
-                  if (res.data.isOk){
+                  if (res.data.isOk) {
 
                     wx.showToast({
                       title: "登录成功",
-                    })
-                  }else{
+                    });
+                    //持久化
+                    wx.setStorage({
+                      key: app.globalData.key,
+                      data: res.data.data.sessionId,
+                    });
+                    //缓存
+                    app.globalData.sessionId = res.data.data.sessionId;
+
+                  } else {
                     wx.showToast({
                       title: res.data.errorMsg,
                     })
                   }
-                  
+
                 }
 
               }
