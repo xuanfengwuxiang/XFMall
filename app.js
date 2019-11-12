@@ -63,18 +63,20 @@ App({
           } else {
             this.globalData.isLoginSucess = false;
             wx.showToast({
-              title: res.data.errorMsg + sessionId,
+              title: res.data.errorMsg,
             })
           }
         } else {
           wx.showToast({
-            title: '接口失败',
+            title: '接口响应成功，状态code失败',
           })
         }
 
       },
       fail: err => {
-
+        wx.showToast({
+          title: '接口响应失败',
+        })
       }
     })
 

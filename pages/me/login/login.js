@@ -116,6 +116,11 @@ Page({
 
                 }
 
+              },
+              fail: err => {
+                wx.showToast({
+                  title: '接口失败',
+                })
               }
             })
 

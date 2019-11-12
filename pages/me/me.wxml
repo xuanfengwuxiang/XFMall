@@ -8,7 +8,7 @@
   <view style="margin-left:25rpx">
     <text style="color:#333333">个人中心</text>
     <view>
-      <text style="font-size:24rpx;color:#666666;" bindtap="login">请先登录</text>
+      <text style="font-size:24rpx;color:#666666;" bindtap="login">{{isLoginSucess?name:"请登录"}}</text>
     </view>
   </view>
 </view>
@@ -18,7 +18,7 @@
   <view style="height:120rpx;display:flex;align-items:center;border-bottom:1rpx solid #eeeeee;" bindtap="onItemClick" data-index="{{index}}">
     <image src="{{item.icon}}" style="width:50rpx;height:50rpx;margin-left:20rpx;" />
 
-    <text style="margin-left:20rpx;font-size:25rpx;colot:#333333;">{{item.name}}</text>
+    <text style="margin-left:20rpx;font-size:25rpx;color:#333333;">{{item.name}}</text>
   </view>
 
 </view>

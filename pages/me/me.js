@@ -1,6 +1,7 @@
-// pages/me/me.js
-Page({
+//我的js
+const app = getApp()
 
+Page({
   /**
    * 页面的初始数据
    */
@@ -23,14 +24,16 @@ Page({
     }, {
       "icon": "/images/home/ic_arrow.jpg",
       "name": "设置"
-    }]
+    }],
+    isLoginSucess: false,
+    name: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    this.data.isLoginSucess = app.globalData.isLoginSucess
   },
 
   /**
@@ -44,6 +47,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
+
+    this.setData({
+      isLoginSucess: app.globalData.isLoginSucess,
+      name: app.globalData.userInfo.nickName,
+    });
 
   },
 
@@ -122,6 +130,9 @@ Page({
 
   //登录
   login: function() {
+    if (this.data.isLoginSucess) {
+      return;
+    }
     wx.navigateTo({
       url: '/pages/me/login/login',
     })
