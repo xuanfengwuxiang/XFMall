@@ -1,6 +1,8 @@
 // pages/me/login/login.js
 const app = getApp()
-
+import {
+  REGISTER
+} from '../../../global/httpConstant.js';
 
 Page({
 
@@ -106,7 +108,11 @@ Page({
                       data: res.data.data.sessionId,
                     });
                     //缓存
-                    app.globalData.sessionId = res.data.data.sessionId;
+                    app.globalData.loginBean = res.data.data;
+                    //关闭界面
+                    wx.navigateBack({
+                      delta: 1
+                    })
 
                   } else {
                     wx.showToast({
@@ -140,8 +146,61 @@ Page({
 
     wx.hideLoading();
     //注册
-    wx.showToast({
-      title: '注册' + this.data.account + this.data.password,
+    this.register();
+  },
+
+  //注册
+  register() {
+
+    wx.showLoading({
+      title: '加载中',
+    })
+
+    wx.login({
+
+      success: res => {
+        wx.hideLoading();
+        if (res.code) {
+
+          wx.request({
+            url: app.globalData.host + REGISTER,
+            data: {
+              code: res.code,
+              tel: this.data.code,
+              password: this.data.password
+            },
+            success: res => {
+
+              //注册失败
+              if (!res.data.isOk) {
+                wx.showToast({
+                  title: res.data.errorMsg,
+                  image: '/images/global/ic_toast_error.png'
+                })
+                return;
+              }
+              //注册成功
+              wx.showToast({
+                title: '注册成功！',
+              });
+              //切换到登录模式
+              this.setData({
+                isLogin: true
+              })
+
+            },
+            fail: err => {
+
+            }
+          })
+        }
+
+      },
+
+      fail: err => {
+        wx.hideLoading();
+
+      }
     })
   },
 

@@ -49,8 +49,8 @@ Page({
   onShow: function() {
 
     this.setData({
-      isLoginSucess: app.globalData.isLoginSucess,
-      name: app.globalData.userInfo.nickName,
+      isLoginSucess: app.globalData.loginBean != null,
+      name: app.globalData.loginBean != null ? app.globalData.loginBean.nickName : null,
     });
 
   },

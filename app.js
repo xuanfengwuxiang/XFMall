@@ -41,6 +41,11 @@ App({
 
   //检查sessionId有没有过期
   checkLoginExpire(sessionId) {
+
+    wx.showLoading({
+      title: '登录中',
+    })
+
     wx.request({
       url: this.globalData.host + '/me/checkLogin',
       method: 'POST',
@@ -49,13 +54,14 @@ App({
         'token': sessionId
       },
       success: res => {
+        wx.hideLoading();
 
         if (res.statusCode == 200) {
           if (res.data.isOk) {
-            
+
             this.globalData.isLoginSucess = true;
-          
-            this.globalData.userInfo = res.data.data;
+            this.globalData.loginBean = res.data.data;
+
             wx.showToast({
               title: '自动登录成功',
             })
@@ -74,6 +80,8 @@ App({
 
       },
       fail: err => {
+        wx.hideLoading();
+        
         wx.showToast({
           title: '接口响应失败',
         })
@@ -87,6 +95,7 @@ App({
     this.globalData.isLoginSucess = false;
     wx.showToast({
       title: '没有sessionId',
+      image: '/images/global/ic_toast_error.png'
     })
   },
 
@@ -95,8 +104,8 @@ App({
     userInfo: null,
     themeColor: "#EE7A77",
     host: "http://192.168.31.195:8080",
-    sessionId: "",
     key: "sessionId",
-    isLoginSucess: false
+    isLoginSucess: false,
+    loginBean: null,
   }
 })
