@@ -117,6 +117,7 @@ Page({
                   } else {
                     wx.showToast({
                       title: res.data.errorMsg,
+                      image:'/images/global/ic_toast_error.png'
                     })
                   }
 
@@ -166,7 +167,7 @@ Page({
             url: app.globalData.host + REGISTER,
             data: {
               code: res.code,
-              tel: this.data.code,
+              tel: this.data.account,
               password: this.data.password
             },
             success: res => {
