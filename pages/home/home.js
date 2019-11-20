@@ -121,11 +121,7 @@ Page({
 
       },
       fail: err => {
-        console.log(err);
-        wx.showModal({
-          title: '',
-          content: '' + JSON.stringify(err),
-        })
+        
         wx.showToast({
           title: '' + JSON.stringify(err),
           image:'/images/global/ic_toast_error.png'

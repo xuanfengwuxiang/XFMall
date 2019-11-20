@@ -41,7 +41,6 @@ App({
         if (res.statusCode == 200) {
           if (res.data.isOk) {
 
-            this.globalData.isLoginSucess = true;
             this.globalData.loginBean = res.data.data;
 
             wx.showToast({
@@ -49,7 +48,6 @@ App({
             })
 
           } else {
-            this.globalData.isLoginSucess = false;
             wx.showToast({
               title: res.data.errorMsg,
             })
@@ -74,7 +72,6 @@ App({
 
   // 登录方法,本处暂不使用 账号登录.需前往登录界面
   login() {
-    this.globalData.isLoginSucess = false;
     wx.showToast({
       title: '没有sessionId',
       image: '/images/global/ic_toast_error.png'
@@ -83,8 +80,12 @@ App({
 
   // 获取用户信息
   getUserInfo() {
+    wx.showLoading({
+      title: '',
+    })
     wx.getSetting({
       success: res => {
+        wx.hideLoading();
         if (res.authSetting['scope.userInfo']) {
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
           wx.getUserInfo({
@@ -110,7 +111,6 @@ App({
     themeColor: "#EE7A77",
     host: "http://121.199.76.177:8080",
     key: "sessionId",
-    isLoginSucess: false,
     loginBean: null,
   }
 })
