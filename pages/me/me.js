@@ -26,14 +26,15 @@ Page({
       "name": "设置"
     }],
     isLoginSucess: false,
-    name: ''
+    name: '',
+    headPic: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    this.data.isLoginSucess = app.globalData.isLoginSucess
+
   },
 
   /**
@@ -50,7 +51,8 @@ Page({
 
     this.setData({
       isLoginSucess: app.globalData.loginBean != null,
-      name: app.globalData.loginBean != null ? app.globalData.loginBean.nickName : null,
+      name: this.data.isLoginSucess ? app.globalData.userInfo.nickName : null,
+      headPic: app.globalData.userInfo.avatarUrl
     });
 
   },

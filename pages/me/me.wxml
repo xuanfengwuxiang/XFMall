@@ -3,7 +3,7 @@
 <!-- 登陆模块 -->
 <view class="login" style="background:url('/images/me/ic_login_bg.jpg');">
 
-  <image src="/images/me/ic_head_default.jpg" style="width:100rpx;height:100rpx;margin-left:50rpx" />
+  <image src="{{isLoginSucess?headPic:'/images/me/ic_head_default.jpg'}}" style="width:100rpx;height:100rpx;margin-left:50rpx" />
 
   <view style="margin-left:25rpx">
     <text style="color:#333333">个人中心</text>

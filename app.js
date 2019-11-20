@@ -17,26 +17,8 @@ App({
       this.login()
     }
 
-    // 获取用户信息
-    wx.getSetting({
-      success: res => {
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
-          wx.getUserInfo({
-            success: res => {
-              // 可以将 res 发送给后台解码出 unionId
-              this.globalData.userInfo = res.userInfo
-
-              // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-              // 所以此处加入 callback 以防止这种情况
-              if (this.userInfoReadyCallback) {
-                this.userInfoReadyCallback(res)
-              }
-            }
-          })
-        }
-      }
-    })
+    //获取用户信息
+    this.getUserInfo()
   },
 
   //检查sessionId有没有过期
@@ -65,7 +47,7 @@ App({
             wx.showToast({
               title: '自动登录成功',
             })
-            
+
           } else {
             this.globalData.isLoginSucess = false;
             wx.showToast({
@@ -81,7 +63,7 @@ App({
       },
       fail: err => {
         wx.hideLoading();
-        
+
         wx.showToast({
           title: '接口响应失败',
         })
@@ -99,11 +81,34 @@ App({
     })
   },
 
+  // 获取用户信息
+  getUserInfo() {
+    wx.getSetting({
+      success: res => {
+        if (res.authSetting['scope.userInfo']) {
+          // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
+          wx.getUserInfo({
+            success: res => {
+              // 可以将 res 发送给后台解码出 unionId
+              this.globalData.userInfo = res.userInfo
+
+              // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
+              // 所以此处加入 callback 以防止这种情况
+              if (this.userInfoReadyCallback) {
+                this.userInfoReadyCallback(res)
+              }
+            }
+          })
+        }
+      }
+    })
+  },
+
   //全局数据
   globalData: {
     userInfo: null,
     themeColor: "#EE7A77",
-    host: "http://192.168.31.195:8080",
+    host: "http://121.199.76.177:8080",
     key: "sessionId",
     isLoginSucess: false,
     loginBean: null,

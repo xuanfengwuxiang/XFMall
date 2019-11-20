@@ -1,5 +1,5 @@
 //首页逻辑层
-
+const app = getApp();
 import {
   getBannerList
 } from '../../service/home.js'
@@ -11,13 +11,13 @@ Page({
    */
   data: {
     banners: [{
-        image: "/images/home/ic_banner_1.jpg"
+        url: "/images/home/ic_banner_1.jpg"
       },
       {
-        image: "/images/home/ic_banner_2.jpg"
+        url: "/images/home/ic_banner_2.jpg"
       },
       {
-        image: "/images/home/ic_banner_3.jpg"
+        url: "/images/home/ic_banner_3.jpg"
       }
     ],
     recommends: [{
@@ -38,10 +38,10 @@ Page({
       "protectionNum": "0",
       "currentIntegral": "5000"
     },
-    nearstPlace:{
+    nearstPlace: {
       nearestPlace: "天润城",
       placeDetail: "10栋",
-      distance:"2.0km"
+      distance: "2.0km"
     }
   },
   /**
@@ -49,9 +49,7 @@ Page({
    */
   onLoad: function(options) {
     //请求轮播图
-    // getBannerList().then(res => {
-    //   console.log
-    // })
+    this.getBanners();
   },
 
   /**
@@ -101,6 +99,39 @@ Page({
    */
   onShareAppMessage: function() {
 
+  },
+
+  // 获取轮播图
+  getBanners() {
+    wx.request({
+      url: app.globalData.host + '/home/getBanners',
+      data: {
+        type: 'home'
+      },
+      method: 'GET',
+      success: res => {
+        if (!res.data.isOk) {
+          return;
+        };
+      
+        console.log(res.data.data);
+        this.setData({
+          banners: res.data.data
+        });
+
+      },
+      fail: err => {
+        console.log(err);
+        wx.showModal({
+          title: '',
+          content: '' + JSON.stringify(err),
+        })
+        wx.showToast({
+          title: '' + JSON.stringify(err),
+          image:'/images/global/ic_toast_error.png'
+        })
+      }
+    })
   },
 
   // 流行模块点击事件
