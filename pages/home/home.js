@@ -33,11 +33,7 @@ Page({
       "image": "/images/home/ic_sign_integral.png",
       "tittle": "签到积分"
     }],
-    protection: {
-      "currentMoney": "¥100.00",
-      "protectionNum": "0",
-      "currentIntegral": "5000"
-    },
+    loginBean: null,
     nearstPlace: {
       nearestPlace: "天润城",
       placeDetail: "10栋",
@@ -50,6 +46,17 @@ Page({
   onLoad: function(options) {
     //请求轮播图
     this.getBanners();
+    //监听器存到globalData
+    app.globalData.homeListener = this.homeListener;
+  },
+
+/**
+ * 监听loginBean
+ */
+  homeListener(loginBean) {
+    this.setData({
+      loginBean: app.globalData.loginBean
+    })
   },
 
   /**
@@ -63,7 +70,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-
+    
   },
 
   /**
@@ -113,7 +120,7 @@ Page({
         if (!res.data.isOk) {
           return;
         };
-      
+
         console.log(res.data.data);
         this.setData({
           banners: res.data.data
@@ -121,10 +128,10 @@ Page({
 
       },
       fail: err => {
-        
+
         wx.showToast({
           title: '' + JSON.stringify(err),
-          image:'/images/global/ic_toast_error.png'
+          image: '/images/global/ic_toast_error.png'
         })
       }
     })

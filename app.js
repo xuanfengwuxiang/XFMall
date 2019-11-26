@@ -42,7 +42,9 @@ App({
           if (res.data.isOk) {
 
             this.globalData.loginBean = res.data.data;
-
+            if (this.globalData.homeListener !== null) {
+              this.globalData.homeListener(res.data.data)
+            }
             wx.showToast({
               title: '自动登录成功',
             })
@@ -112,5 +114,6 @@ App({
     host: "http://121.199.76.177:8080",
     key: "sessionId",
     loginBean: null,
+    homeListener: null
   }
 })

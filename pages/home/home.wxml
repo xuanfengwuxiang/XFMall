@@ -12,7 +12,7 @@
 </view>
 
 <!-- 我的环保 -->
-<myProtection currentMoney="{{protection.currentMoney}}" protectionNum="{{protection.protectionNum}}" currentIntegral="{{protection.currentIntegral}}" />
+<myProtection currentMoney="{{loginBean!=null?'¥'+loginBean.money:'¥0.00'}}" protectionNum="{{protection.protectionNum}}" currentIntegral="{{loginBean!=null?loginBean.integral:'0'}}" />
 
 <!-- 最近回收点 -->
 <nearestPlace nearestPlace="{{nearstPlace.nearestPlace}}" placeDetail="{{nearstPlace.placeDetail}}" distance="{{nearstPlace.distance}} " />
