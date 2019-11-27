@@ -52,7 +52,7 @@ Page({
     this.setData({
       isLoginSucess: app.globalData.loginBean != null,
       name: app.globalData.loginBean != null ? app.globalData.userInfo.nickName : null,
-      headPic: app.globalData.userInfo.avatarUrl
+      headPic: app.globalData.userInfo != null ? app.globalData.userInfo.avatarUrl : null
     });
 
   },

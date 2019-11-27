@@ -8,9 +8,9 @@
   <block wx:for="{{integralList}}" wx:key="{{index}}">
     <view class="integral_item">
 
-      <text>{{item.type}}</text>
+      <text>{{util.getIntegralSource(item.integralSource)}}</text>
 
-      <text style='{{util.isReduce(item.integral)?"color:red;":"color:green"}}'>{{item.integral}}</text>
+      <text style='{{item.useType==="in"?"color:green;":"color:red"}}'>{{(item.useType==="in"?"+":"-")+item.amount}}</text>
 
     </view>
 

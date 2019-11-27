@@ -6,26 +6,32 @@ Page({
    */
   data: {
     "integralList": [{
-      "type": "回收成功",
-      "integral": "+5"
+      "useType": "in",
+      "integralSource": "recycle",
+      "amount": "5"
     }, {
-        "type": "回收成功",
-        "integral": "+5"
-      }, {
-        "type": "回收成功",
-        "integral": "+5"
-      }, {
-        "type": "积分商城消费",
-        "integral": "-10"
-      }, {
-        "type": "签到",
-        "integral": "+5"
-      }, {
-        "type": "回收成功",
-        "integral": "+5"
-      }]
-    ,
-    "currentIndex":0
+      "useType": "in",
+      "integralSource": "recycle",
+      "amount": "5"
+    }, {
+      "useType": "in",
+
+      "integralSource": "recycle",
+      "amount": "5"
+    }, {
+      "useType": "out",
+      "integralSource": "mall",
+      "amount": "10"
+    }, {
+      "useType": "in",
+      "integralSource": "sign",
+      "amount": "5"
+    }, {
+      "useType": "in",
+      "integralSource": "recycle",
+      "amount": "5"
+    }],
+    "currentIndex": 0
   },
 
   /**
@@ -84,7 +90,7 @@ Page({
 
   },
 
-  get:function(){
-    
+  get: function() {
+
   }
 })
