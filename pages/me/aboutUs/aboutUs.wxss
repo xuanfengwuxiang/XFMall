@@ -1,1 +1,7 @@
 /* pages/me/aboutUs/aboutUs.wxss */
+
+.description {
+  padding: 30rpx;
+  display: flex;
+  flex-direction: column
+}
