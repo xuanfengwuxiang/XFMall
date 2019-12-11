@@ -1,4 +1,10 @@
 <!--商品列表 自定义控件-->
+
+
+<!-- 引入wxs脚本 -->
+<wxs src='util.wxs' module='util' />
+
+
 <view class="productList">
 
   <block wx:for="{{list}}" wx:key="{{index}}">
@@ -6,11 +12,11 @@
       <image src="{{item.icon}}" class="productList_item_image" />
 
       <view class="productList_item_right" mode="scaleToFill">
-        <text>{{item.productName}}</text>
+        <text>{{util.getRecycleProductName(item.recycleType)}}</text>
 
         <view class="total_money_and_num">
-          <text>{{item.totalPrice+"元"}}</text>
-          <text class="num">{{"x"+item.pruductNum+item.prodectUnit}}</text>
+          <text>{{item.commodityPrice+"元"}}</text>
+          <text class="num">{{"x"+item.num+item.unit}}</text>
         </view>
       </view>
     </view>

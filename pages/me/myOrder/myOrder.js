@@ -10,124 +10,124 @@ Page({
     "orders": [{
       "productList": [{
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "productName": "塑料瓶",
-        "pruductNum": "20",
-        "prodectUnit": "个",
-        "totalPrice": "33"
+        "recycleType": "H001",
+        "num": "20",
+        "unit": "个",
+        "commodityPrice": "33"
       }, {
         "icon": "http://img.weiye.me/zcimgdir/thumb/t_14966428515934f523ae28a.png",
-        "productName": "铁块",
-        "pruductNum": "20",
-        "prodectUnit": "斤",
-        "totalPrice": "33"
+        "recycleType": "H002",
+        "num": "20",
+        "unit": "斤",
+        "commodityPrice": "33"
       }, {
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "productName": "塑料瓶",
-        "pruductNum": "20",
-        "prodectUnit": "个",
-        "totalPrice": "33"
+        "recycleType": "H001",
+        "num": "20",
+        "unit": "个",
+        "commodityPrice": "33"
       }]
     }, {
       "productList": [{
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "productName": "塑料瓶",
-        "pruductNum": "20",
-        "prodectUnit": "个",
-        "totalPrice": "33"
+        "recycleType": "H001",
+        "num": "20",
+        "unit": "个",
+        "commodityPrice": "33"
       }, {
         "icon": "http://img.weiye.me/zcimgdir/thumb/t_14966428515934f523ae28a.png",
-        "productName": "塑料瓶",
-        "pruductNum": "20",
-        "prodectUnit": "个",
-        "totalPrice": "33"
+        "recycleType": "H002",
+        "num": "20",
+        "unit": "个",
+        "commodityPrice": "33"
       }, {
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "productName": "塑料瓶",
-        "pruductNum": "20",
-        "prodectUnit": "个",
-        "totalPrice": "33"
+        "recycleType": "H001",
+        "num": "20",
+        "unit": "个",
+        "commodityPrice": "33"
       }]
     }],
     "orders2": [{
       "productList": [{
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/scratchComfort.png",
-        "productName": "萨芬",
-        "pruductNum": "20",
-        "prodectUnit": "个",
-        "totalPrice": "33"
+        "recycleType": "H001",
+        "num": "20",
+        "unit": "个",
+        "commodityPrice": "33"
       }, {
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/scratchComfort.png",
-        "productName": "塑料瓶4444",
-        "pruductNum": "20",
-        "prodectUnit": "个",
-        "totalPrice": "33"
+        "recycleType": "H002",
+        "num": "20",
+        "unit": "个",
+        "commodityPrice": "33"
       }, {
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "productName": "塑料瓶阿斯顿发生",
-        "pruductNum": "20",
-        "prodectUnit": "个",
-        "totalPrice": "33"
+        "recycleType": "H001",
+        "num": "20",
+        "unit": "个",
+        "commodityPrice": "33"
       }]
     }, {
       "productList": [{
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/scratchComfort.png",
-        "productName": "萨芬",
-        "pruductNum": "20",
-        "prodectUnit": "个",
-        "totalPrice": "33"
+        "recycleType": "H001",
+        "num": "20",
+        "unit": "个",
+        "commodityPrice": "33"
       }, {
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/scratchComfort.png",
-        "productName": "塑料瓶4444",
-        "pruductNum": "20",
-        "prodectUnit": "个",
-        "totalPrice": "33"
+        "recycleType": "H002",
+        "num": "20",
+        "unit": "个",
+        "commodityPrice": "33"
       }, {
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "productName": "塑料瓶阿斯顿发生",
-        "pruductNum": "20",
-        "prodectUnit": "个",
-        "totalPrice": "33"
+        "recycleType": "H001",
+        "num": "20",
+        "unit": "个",
+        "commodityPrice": "33"
       }]
     }],
     "orders3": [{
       "productList": [{
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "productName": "塑料瓶",
-        "pruductNum": "20",
-        "prodectUnit": "个",
-        "totalPrice": "33"
+        "recycleType": "H001",
+        "num": "20",
+        "unit": "个",
+        "commodityPrice": "33"
       }, {
         "icon": "http://img.weiye.me/zcimgdir/thumb/t_14966428515934f523ae28a.png",
-        "productName": "铁块",
-        "pruductNum": "20",
-        "prodectUnit": "斤",
-        "totalPrice": "33"
+        "recycleType": "H002",
+        "num": "20",
+        "unit": "斤",
+        "commodityPrice": "33"
       }, {
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "productName": "塑料瓶",
-        "pruductNum": "20",
-        "prodectUnit": "个",
-        "totalPrice": "33"
+        "recycleType": "H001",
+        "num": "20",
+        "unit": "个",
+        "commodityPrice": "33"
       }]
     }, {
       "productList": [{
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "productName": "塑料瓶",
-        "pruductNum": "20",
-        "prodectUnit": "个",
-        "totalPrice": "33"
+        "recycleType": "H001",
+        "num": "20",
+        "unit": "个",
+        "commodityPrice": "33"
       }, {
         "icon": "http://img.weiye.me/zcimgdir/thumb/t_14966428515934f523ae28a.png",
-        "productName": "塑料瓶",
-        "pruductNum": "20",
-        "prodectUnit": "个",
-        "totalPrice": "33"
+        "recycleType": "H002",
+        "num": "20",
+        "unit": "个",
+        "commodityPrice": "33"
       }, {
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "productName": "塑料瓶",
-        "pruductNum": "20",
-        "prodectUnit": "个",
-        "totalPrice": "33"
+        "recycleType": "H001",
+        "num": "20",
+        "unit": "个",
+        "commodityPrice": "33"
       }]
     }]
   },
