@@ -12,7 +12,7 @@
       <image src="{{item.icon}}" class="productList_item_image" />
 
       <view class="productList_item_right" mode="scaleToFill">
-        <text>{{util.getRecycleProductName(item.recycleType)}}</text>
+        <text>{{util.getRecycleProductName(item.commodityType)}}</text>
 
         <view class="total_money_and_num">
           <text>{{item.commodityPrice+"元"}}</text>

@@ -10,19 +10,19 @@ Page({
     "orders": [{
       "productList": [{
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "recycleType": "H001",
+        "commodityType": "H001",
         "num": "20",
         "unit": "个",
         "commodityPrice": "33"
       }, {
         "icon": "http://img.weiye.me/zcimgdir/thumb/t_14966428515934f523ae28a.png",
-        "recycleType": "H002",
+        "commodityType": "H002",
         "num": "20",
         "unit": "斤",
         "commodityPrice": "33"
       }, {
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "recycleType": "H001",
+        "commodityType": "H001",
         "num": "20",
         "unit": "个",
         "commodityPrice": "33"
@@ -30,19 +30,19 @@ Page({
     }, {
       "productList": [{
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "recycleType": "H001",
+        "commodityType": "H001",
         "num": "20",
         "unit": "个",
         "commodityPrice": "33"
       }, {
         "icon": "http://img.weiye.me/zcimgdir/thumb/t_14966428515934f523ae28a.png",
-        "recycleType": "H002",
+        "commodityType": "H002",
         "num": "20",
         "unit": "个",
         "commodityPrice": "33"
       }, {
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "recycleType": "H001",
+        "commodityType": "H001",
         "num": "20",
         "unit": "个",
         "commodityPrice": "33"
@@ -51,19 +51,19 @@ Page({
     "orders2": [{
       "productList": [{
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/scratchComfort.png",
-        "recycleType": "H001",
+        "commodityType": "H001",
         "num": "20",
         "unit": "个",
         "commodityPrice": "33"
       }, {
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/scratchComfort.png",
-        "recycleType": "H002",
+        "commodityType": "H002",
         "num": "20",
         "unit": "个",
         "commodityPrice": "33"
       }, {
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "recycleType": "H001",
+        "commodityType": "H001",
         "num": "20",
         "unit": "个",
         "commodityPrice": "33"
@@ -71,19 +71,19 @@ Page({
     }, {
       "productList": [{
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/scratchComfort.png",
-        "recycleType": "H001",
+        "commodityType": "H001",
         "num": "20",
         "unit": "个",
         "commodityPrice": "33"
       }, {
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/scratchComfort.png",
-        "recycleType": "H002",
+        "commodityType": "H002",
         "num": "20",
         "unit": "个",
         "commodityPrice": "33"
       }, {
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "recycleType": "H001",
+        "commodityType": "H001",
         "num": "20",
         "unit": "个",
         "commodityPrice": "33"
@@ -92,19 +92,19 @@ Page({
     "orders3": [{
       "productList": [{
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "recycleType": "H001",
+        "commodityType": "H001",
         "num": "20",
         "unit": "个",
         "commodityPrice": "33"
       }, {
         "icon": "http://img.weiye.me/zcimgdir/thumb/t_14966428515934f523ae28a.png",
-        "recycleType": "H002",
+        "commodityType": "H002",
         "num": "20",
         "unit": "斤",
         "commodityPrice": "33"
       }, {
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "recycleType": "H001",
+        "commodityType": "H001",
         "num": "20",
         "unit": "个",
         "commodityPrice": "33"
@@ -112,19 +112,19 @@ Page({
     }, {
       "productList": [{
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "recycleType": "H001",
+        "commodityType": "H001",
         "num": "20",
         "unit": "个",
         "commodityPrice": "33"
       }, {
         "icon": "http://img.weiye.me/zcimgdir/thumb/t_14966428515934f523ae28a.png",
-        "recycleType": "H002",
+        "commodityType": "H002",
         "num": "20",
         "unit": "个",
         "commodityPrice": "33"
       }, {
         "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "recycleType": "H001",
+        "commodityType": "H001",
         "num": "20",
         "unit": "个",
         "commodityPrice": "33"
