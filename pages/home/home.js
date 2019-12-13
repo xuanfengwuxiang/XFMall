@@ -123,7 +123,6 @@ Page({
           return;
         };
 
-        console.log(res.data.data);
         this.setData({
           banners: res.data.data
         });

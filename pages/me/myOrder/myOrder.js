@@ -1,4 +1,12 @@
-// pages/me/myOrder/myOrder.js
+//我的订单 myOrder.js
+
+const app = getApp();
+import {
+  MY_ORDERS
+} from '../../../global/httpConstant.js';
+const HOME = 'home';
+const STORE = 'store';
+
 Page({
 
   /**
@@ -7,135 +15,15 @@ Page({
   data: {
     "currentIndex": 0,
     "tittles": ["门店回收", "上门回收"],
-    "orders": [{
-      "productList": [{
-        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "commodityType": "H001",
-        "num": "20",
-        "unit": "个",
-        "commodityPrice": "33"
-      }, {
-        "icon": "http://img.weiye.me/zcimgdir/thumb/t_14966428515934f523ae28a.png",
-        "commodityType": "H002",
-        "num": "20",
-        "unit": "斤",
-        "commodityPrice": "33"
-      }, {
-        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "commodityType": "H001",
-        "num": "20",
-        "unit": "个",
-        "commodityPrice": "33"
-      }]
-    }, {
-      "productList": [{
-        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "commodityType": "H001",
-        "num": "20",
-        "unit": "个",
-        "commodityPrice": "33"
-      }, {
-        "icon": "http://img.weiye.me/zcimgdir/thumb/t_14966428515934f523ae28a.png",
-        "commodityType": "H002",
-        "num": "20",
-        "unit": "个",
-        "commodityPrice": "33"
-      }, {
-        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "commodityType": "H001",
-        "num": "20",
-        "unit": "个",
-        "commodityPrice": "33"
-      }]
-    }],
-    "orders2": [{
-      "productList": [{
-        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/scratchComfort.png",
-        "commodityType": "H001",
-        "num": "20",
-        "unit": "个",
-        "commodityPrice": "33"
-      }, {
-        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/scratchComfort.png",
-        "commodityType": "H002",
-        "num": "20",
-        "unit": "个",
-        "commodityPrice": "33"
-      }, {
-        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "commodityType": "H001",
-        "num": "20",
-        "unit": "个",
-        "commodityPrice": "33"
-      }]
-    }, {
-      "productList": [{
-        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/scratchComfort.png",
-        "commodityType": "H001",
-        "num": "20",
-        "unit": "个",
-        "commodityPrice": "33"
-      }, {
-        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/scratchComfort.png",
-        "commodityType": "H002",
-        "num": "20",
-        "unit": "个",
-        "commodityPrice": "33"
-      }, {
-        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "commodityType": "H001",
-        "num": "20",
-        "unit": "个",
-        "commodityPrice": "33"
-      }]
-    }],
-    "orders3": [{
-      "productList": [{
-        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "commodityType": "H001",
-        "num": "20",
-        "unit": "个",
-        "commodityPrice": "33"
-      }, {
-        "icon": "http://img.weiye.me/zcimgdir/thumb/t_14966428515934f523ae28a.png",
-        "commodityType": "H002",
-        "num": "20",
-        "unit": "斤",
-        "commodityPrice": "33"
-      }, {
-        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "commodityType": "H001",
-        "num": "20",
-        "unit": "个",
-        "commodityPrice": "33"
-      }]
-    }, {
-      "productList": [{
-        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "commodityType": "H001",
-        "num": "20",
-        "unit": "个",
-        "commodityPrice": "33"
-      }, {
-        "icon": "http://img.weiye.me/zcimgdir/thumb/t_14966428515934f523ae28a.png",
-        "commodityType": "H002",
-        "num": "20",
-        "unit": "个",
-        "commodityPrice": "33"
-      }, {
-        "icon": "https://cdn.jisuapp.cn/zhichi_frontend/static/webapp/images/share_feng.jpg",
-        "commodityType": "H001",
-        "num": "20",
-        "unit": "个",
-        "commodityPrice": "33"
-      }]
-    }]
+    "orders": null,
+    "store": [],
+    "home": []
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    this.getMyOrders();
   },
 
   /**
@@ -148,9 +36,7 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function() {
-
-  },
+  onShow: function() {},
 
   /**
    * 生命周期函数--监听页面隐藏
@@ -180,6 +66,71 @@ Page({
 
   },
 
+  //请求我的订单接口
+  getMyOrders: function() {
+
+    //登录情况判断
+    if (app.globalData.loginBean == null) {
+
+      wx.showToast({
+        title: '请先登录',
+        image: '/images/global/ic_toast_error.png'
+      })
+      return;
+    }
+
+    //请求
+    wx.showLoading({
+      title: '',
+    })
+    wx.request({
+      url: app.globalData.host + MY_ORDERS,
+      data: {
+        tel: app.globalData.loginBean.tel,
+      },
+      success: res => {
+        wx.hideLoading();
+
+        if (res.statusCode !== 200 || !res.data.isOk) {
+          return;
+        }
+        this.classifyOrders(res.data.data);
+        console.log(res.data.data);
+      },
+      fail: error => {
+        wx.hideLoading();
+
+      }
+    })
+
+  },
+
+  //我的订单分类成：上门回收，门店回收
+  classifyOrders(json) {
+    if (json == null) {
+      return;
+    }
+
+    var store = [];
+    var home = [];
+
+    for (var i = 0; i < json.length; i++) {
+
+      var bean = json[i];
+      if (STORE === bean[0].recycleType) {
+        store.push(bean);
+      } else {
+        home.push(bean);
+      }
+    }
+
+    this.setData({
+      orders: store,
+      store: store,
+      home: home
+    });
+  },
+
   /**
    * 用户点击右上角分享
    */
@@ -199,13 +150,13 @@ Page({
     switch (index) {
       case 0:
         this.setData({
-          orders: this.data.orders3
+          orders: this.data.store
         });
         break;
 
       case 1:
         this.setData({
-          orders: this.data.orders2
+          orders: this.data.home
         });
         break;
       default:

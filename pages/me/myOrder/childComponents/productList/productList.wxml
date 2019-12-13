@@ -9,7 +9,7 @@
 
   <block wx:for="{{list}}" wx:key="{{index}}">
     <view class="productList_item" bindtap="onProductItemClick" data-index="{{index}}">
-      <image src="{{item.icon}}" class="productList_item_image" />
+      <image src="{{host+item.icon}}" class="productList_item_image" />
 
       <view class="productList_item_right" mode="scaleToFill">
         <text>{{util.getRecycleProductName(item.commodityType)}}</text>

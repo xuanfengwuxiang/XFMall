@@ -13,6 +13,6 @@
 
 <!-- 订单列表 -->
 <view wx:for="{{orders}}" wx:key="{{index}}" class="orders">
-  <productList list="{{item.productList}}" class="orders_item" bindtap="onOrderItemClick" data-index="{{index}}" />
+  <productList list="{{item}}" class="orders_item" bindtap="onOrderItemClick" data-index="{{index}}" />
 
 </view>
