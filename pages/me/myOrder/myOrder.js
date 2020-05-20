@@ -170,7 +170,7 @@ Page({
   onOrderItemClick: function(event) {
 
     var index = event.currentTarget.dataset.index;
-    var productList = this.data.orders[index].productList;
+    var productList = this.data.orders[index];
     var jsonString = JSON.stringify(productList);
     wx.navigateTo({
       url: 'orderDetail/orderDetail?productList=' + jsonString,
