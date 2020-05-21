@@ -1,8 +1,44 @@
 /* 我的界面 样式 */
 
-.login{
-  height:300rpx;
+.tittle{
+  height:270rpx;
   background-size: cover;
   display:flex;
   align-items:center;
+  justify-content:space-between
+}
+
+.tittle_left{
+  display:flex;
+  align-items:center;
+}
+
+/* 头像 */
+.head{
+  width:100rpx;
+  height:100rpx;
+  margin-left:50rpx;
+  border-radius:250rpx
+}
+
+/* 名称和登录 */
+.name_login{
+  margin-left:25rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 登录按钮 */
+.login{
+  font-size:24rpx;
+  color:#ffffff;
+  margin-top: 8rpx;
+}
+
+/* tittle里面的箭头 */
+.tittle_arrow{
+  width:50rpx;
+  height:50rpx;
+  display: flex;
+  margin-right: 50rpx;
 }

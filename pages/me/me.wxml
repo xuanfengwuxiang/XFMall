@@ -1,16 +1,19 @@
 <!--我的-->
 
-<!-- 登陆模块 -->
-<view class="login" style="background:url('/images/me/ic_login_bg.jpg');">
+<!-- 头模块 -->
+<view class="tittle" style="background:#4B9E66;" bindtap="">
 
-  <image src="{{isLoginSucess?headPic:'/images/me/ic_head_default.jpg'}}" style="width:100rpx;height:100rpx;margin-left:50rpx" />
-
-  <view style="margin-left:25rpx">
-    <text style="color:#333333">个人中心</text>
-    <view>
-      <text style="font-size:24rpx;color:#666666;" bindtap="login">{{isLoginSucess?name:"请登录"}}</text>
+  <view class="tittle_left">
+    <!-- 头像 -->
+    <image src="{{isLoginSucess?headPic:'/images/me/ic_head_default.jpg'}}" class="head" />
+    <!-- 商家名 -->
+    <view class="name_login">
+      <text style="color:#ffffff">商家中心</text>
+      <text class="login" bindtap="login">{{isLoginSucess?name:"请登录"}}</text>
     </view>
   </view>
+
+  <image class="tittle_arrow" src="/images/global/arrow.png" />
 </view>
 
 <!-- 功能列表 -->

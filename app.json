@@ -20,29 +20,36 @@
     "pages/home/recommend/integralMall/integralMall",
     "pages/home/recommend/signIntegral/signIntegral",
     "pages/me/myOrder/orderDetail/orderDetail",
-    "pages/me/login/login"
+    "pages/me/login/login",
+    "pages/goods/goods"
   ],
   "tabBar": {
-    "selectedColor": "#EE7A77",
+    "selectedColor": "#008000",
     "color": "#000000",
     "list": [
       {
         "pagePath": "pages/home/home",
-        "iconPath": "images/home/ic_home.png",
-        "selectedIconPath": "images/home/ic_home.png",
-        "text": "首页"
+        "iconPath": "images/store/ic_store_normal.png",
+        "selectedIconPath": "images/store/ic_store_selected.png",
+        "text": "店铺"
+      },
+      {
+        "pagePath": "pages/goods/goods",
+        "iconPath": "images/goods/ic_goods_normal.png",
+        "selectedIconPath": "images/goods/ic_goods_selected.png",
+        "text": "商品"
       },
       {
         "pagePath": "pages/find/find",
-        "iconPath": "images/find/ic_find.png",
-        "selectedIconPath": "images/find/ic_find.png",
-        "text": "发现"
+        "iconPath": "images/order/ic_order_normal.png",
+        "selectedIconPath": "images/order/ic_order_selected.png",
+        "text": "订单"
       },
       {
         "pagePath": "pages/me/me",
-        "iconPath": "images/me/ic_me.png",
-        "selectedIconPath": "images/me/ic_me.png",
-        "text": "我的"
+        "iconPath": "images/me/ic_me_normal.png",
+        "selectedIconPath": "images/me/ic_me_selected.png",
+        "text": "商家中心"
       }
     ]
   },
