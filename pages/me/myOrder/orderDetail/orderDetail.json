@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "productList": "/pages/me/myOrder/childComponents/productList/productList"
-  },
-  "navigationBarTitleText": "订单详情"
-}

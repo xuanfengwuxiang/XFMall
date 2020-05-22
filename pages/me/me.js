@@ -8,21 +8,15 @@ Page({
   data: {
     myList: [{
       "icon": "/images/me/ic_arrow_right.png",
-      "name": "我的订单"
-    }, {
-        "icon": "/images/me/ic_arrow_right.png",
-      "name": "我的积分"
-    }, {
-        "icon": "/images/me/ic_arrow_right.png",
       "name": "需求反馈"
     }, {
-        "icon": "/images/me/ic_arrow_right.png",
+      "icon": "/images/me/ic_arrow_right.png",
       "name": "关于旋风商城"
     }, {
-        "icon": "/images/me/ic_arrow_right.png",
+      "icon": "/images/me/ic_arrow_right.png",
       "name": "帮助中心"
     }, {
-        "icon": "/images/me/ic_arrow_right.png",
+      "icon": "/images/me/ic_arrow_right.png",
       "name": "设置"
     }],
     isLoginSucess: false,
@@ -94,16 +88,7 @@ Page({
   onItemClick(event) {
     var index = event.currentTarget.dataset.index;
     switch (this.data.myList[index].name) {
-      case "我的订单":
-        wx.navigateTo({
-          url: '/pages/me/myOrder/myOrder',
-        })
-        break;
-      case "我的积分":
-        wx.navigateTo({
-          url: '/pages/me/myIntegral/myIntegral',
-        })
-        break;
+    
       case "需求反馈":
         wx.navigateTo({
           url: '/pages/me/feedback/feedback',

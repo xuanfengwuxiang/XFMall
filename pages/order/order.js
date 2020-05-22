@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    tab_tittle: ["最新推荐", "环保百科", "生活达人"]
+    "currentIndex": 0
   },
 
   /**
@@ -67,5 +67,20 @@ Page({
   // tab标题点击
   tabClick(event) {
     console.log(event)
+  },
+
+  //点击送货上门
+  clickSend: function() {
+
+    this.setData({
+      currentIndex : 0
+    });
+  },
+
+  //点击自提
+  clickSelf: function() {
+    this.setData({
+      currentIndex :1
+    })
   }
 })

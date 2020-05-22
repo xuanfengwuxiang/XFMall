@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/find/find",
+    "pages/order/order",
     "pages/me/me",
     "pages/home/collectToHome/collectToHome",
     "pages/home/childComponents/myProtection/myProtection",
@@ -9,8 +9,6 @@
     "pages/home/myProtection/protectionNum/protectionNum",
     "pages/home/myProtection/currentIntegral/currentIntegral",
     "pages/home/nearestPlace/nearestPlace",
-    "pages/me/myOrder/myOrder",
-    "pages/me/myIntegral/myIntegral",
     "pages/me/feedback/feedback",
     "pages/me/aboutUs/aboutUs",
     "pages/me/help/help",
@@ -19,7 +17,6 @@
     "pages/home/recommend/inviteGift/inviteGift",
     "pages/home/recommend/integralMall/integralMall",
     "pages/home/recommend/signIntegral/signIntegral",
-    "pages/me/myOrder/orderDetail/orderDetail",
     "pages/me/login/login",
     "pages/goods/goods"
   ],
@@ -40,7 +37,7 @@
         "text": "商品"
       },
       {
-        "pagePath": "pages/find/find",
+        "pagePath": "pages/order/order",
         "iconPath": "images/order/ic_order_normal.png",
         "selectedIconPath": "images/order/ic_order_selected.png",
         "text": "订单"

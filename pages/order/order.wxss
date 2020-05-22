@@ -1,0 +1,36 @@
+/* 发现界面 样式 */
+
+/* 标题总布局 */
+.tittle{
+  height: 100rpx;
+  background: #4FAE70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.group{
+  background: #377D21;
+  border-radius: 10rpx;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+
+}
+
+.active{
+  background: #ffffff;
+  border-radius: 10rpx;
+  color: #377D21
+}
+
+.normal{
+color: #ffffff
+}
+
+
+
+
+
+
+
