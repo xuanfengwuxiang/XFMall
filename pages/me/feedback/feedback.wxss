@@ -1,0 +1,22 @@
+/* 需求反馈界面 样式*/
+
+.input {
+  height: 400rpx;
+  margin-top: 60rpx;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  background: #eeeeee;
+  border-radius: 10rpx;
+  padding: 10rpx;
+}
+
+
+.commit_button{
+  margin-top: 60rpx;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  color: white;
+  background: #55cc65;
+  text-align: center;
+}
+

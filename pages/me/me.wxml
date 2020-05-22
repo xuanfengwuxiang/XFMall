@@ -13,15 +13,17 @@
     </view>
   </view>
 
-  <image class="tittle_arrow" src="/images/global/arrow.png" />
+  <image class="tittle_arrow" src="/images/global/arrow.png" hidden="!isLoginSucess" />
 </view>
 
 <!-- 功能列表 -->
 <view wx:for="{{myList}}" wx:key="{{index}}">
-  <view style="height:120rpx;display:flex;align-items:center;border-bottom:1rpx solid #eeeeee;" bindtap="onItemClick" data-index="{{index}}">
-    <image src="{{item.icon}}" style="width:50rpx;height:50rpx;margin-left:20rpx;" />
+  <view class="item_style" bindtap="onItemClick" data-index="{{index}}">
 
     <text style="margin-left:20rpx;font-size:25rpx;color:#333333;">{{item.name}}</text>
+
+    <image src="{{item.icon}}" style="width:50rpx;height:50rpx;margin-left:20rpx;" />
+
   </view>
 
 </view>

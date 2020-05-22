@@ -7,7 +7,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    loginBean: null
+    loginBean: null,
+    feedbackText: ""
   },
 
   /**
@@ -66,5 +67,16 @@ Page({
    */
   onShareAppMessage: function() {
 
+  },
+
+  //动态存储反馈内容
+  getFeedBack: function(event) {
+    this.data.feedbackText = event.detail.value;
+  },
+
+  //提交功能
+  commit: function() {
+    
+    
   }
 })

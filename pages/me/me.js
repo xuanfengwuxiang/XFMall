@@ -7,22 +7,22 @@ Page({
    */
   data: {
     myList: [{
-      "icon": "/images/home/ic_arrow.jpg",
+      "icon": "/images/me/ic_arrow_right.png",
       "name": "我的订单"
     }, {
-      "icon": "/images/home/ic_arrow.jpg",
+        "icon": "/images/me/ic_arrow_right.png",
       "name": "我的积分"
     }, {
-      "icon": "/images/home/ic_arrow.jpg",
-      "name": "环保金提现"
+        "icon": "/images/me/ic_arrow_right.png",
+      "name": "需求反馈"
     }, {
-      "icon": "/images/home/ic_arrow.jpg",
-      "name": "关于我们"
+        "icon": "/images/me/ic_arrow_right.png",
+      "name": "关于旋风商城"
     }, {
-      "icon": "/images/home/ic_arrow.jpg",
+        "icon": "/images/me/ic_arrow_right.png",
       "name": "帮助中心"
     }, {
-      "icon": "/images/home/ic_arrow.jpg",
+        "icon": "/images/me/ic_arrow_right.png",
       "name": "设置"
     }],
     isLoginSucess: false,
@@ -104,12 +104,12 @@ Page({
           url: '/pages/me/myIntegral/myIntegral',
         })
         break;
-      case "环保金提现":
+      case "需求反馈":
         wx.navigateTo({
-          url: '/pages/me/toCash/toCash',
+          url: '/pages/me/feedback/feedback',
         })
         break;
-      case "关于我们":
+      case "关于旋风商城":
         wx.navigateTo({
           url: '/pages/me/aboutUs/aboutUs',
         })
