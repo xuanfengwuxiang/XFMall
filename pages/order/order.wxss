@@ -1,36 +1,47 @@
 /* 发现界面 样式 */
 
 /* 标题总布局 */
-.tittle{
+
+.tittle {
   height: 100rpx;
-  background: #4FAE70;
+  background: #4fae70;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.group{
-  background: #377D21;
+.group {
+  background: #377d21;
   border-radius: 10rpx;
   width: fit-content;
   display: flex;
   align-items: center;
-
 }
 
-.active{
-  background: #ffffff;
+.self_normal {
+  color: #fff;
+  padding-left: 35rpx;
+  padding-right: 35rpx;
+}
+
+.self_active {
+  background: #fff;
   border-radius: 10rpx;
-  color: #377D21
+  color: #377d21;
+  padding-left: 35rpx;
+  padding-right: 35rpx;
 }
 
-.normal{
-color: #ffffff
+.send_normal {
+  color: #fff;
+  padding-left: 5rpx;
+  padding-right: 5rpx;
 }
 
-
-
-
-
-
-
+.send_active {
+  background: #fff;
+  border-radius: 10rpx;
+  color: #377d21;
+  padding-left: 5rpx;
+  padding-right: 5rpx;
+}

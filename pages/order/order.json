@@ -2,5 +2,5 @@
   "usingComponents": {
     "tab": "/components/tab/tab"
   },
-  "navigationBarTitleText": "发现"
+  "navigationBarTitleText": "订单"
 }

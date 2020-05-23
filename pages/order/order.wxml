@@ -3,7 +3,8 @@
 <!-- tittle模块切换 -->
 <view class="tittle">
   <view class="group">
-    <text decode="{{true}}" class="{{currentIndex==0?'active':'normal'}}" bindtap="clickSend">&nbsp;送货上门&nbsp;</text>
-    <text decode="{{true}}" class="{{currentIndex==1?'active':'normal'}}" bindtap="clickSelf"> &nbsp;&nbsp;&nbsp;&nbsp;自提&nbsp;&nbsp;&nbsp;&nbsp;</text>
+    <text class="{{currentIndex==0?'send_active':'send_normal'}}" bindtap="clickSend">送货上门</text>
+    <text class="{{currentIndex==1?'self_active':'self_normal'}}" bindtap="clickSelf">自提</text>
   </view>
 </view>
+
