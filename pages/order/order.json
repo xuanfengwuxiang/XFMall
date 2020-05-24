@@ -1,6 +1,8 @@
 {
   "usingComponents": {
-    "tab": "/components/tab/tab"
+    "tab": "/components/tab/tab",
+    "SendOrderView":"./childComponents/SendOrderView/SendOrderView",
+    "SelfOrderView":"./childComponents/SelfOrderView/SelfOrderView"
   },
   "navigationBarTitleText": "订单"
 }

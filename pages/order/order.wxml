@@ -8,3 +8,6 @@
   </view>
 </view>
 
+<SendOrderView hidden="{{currentIndex==1}}" />
+
+<SelfOrderView hidden="{{currentIndex==0}}" />

@@ -1,0 +1,6 @@
+<!--自提订单view-->
+
+<view hidden="{{hidden}}">
+  <tab tittles="{{tittles}}" />
+
+</view>

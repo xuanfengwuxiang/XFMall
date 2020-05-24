@@ -1,0 +1,6 @@
+<!--送货上门订单view-->
+
+<view hidden="{{hidden}}">
+<tab tittles="{{tittles}}"/>
+
+</view>
