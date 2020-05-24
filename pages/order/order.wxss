@@ -45,3 +45,7 @@
   padding-left: 5rpx;
   padding-right: 5rpx;
 }
+
+page{
+  background:#eeeeee;
+}

@@ -3,15 +3,13 @@
 .input {
   height: 400rpx;
   margin-top: 60rpx;
-  margin-left: 60rpx;
-  margin-right: 60rpx;
-  background: #eeeeee;
+  background: #eee;
   border-radius: 10rpx;
   padding: 10rpx;
+  width: 100%;
 }
 
-
-.commit_button{
+.commit_button {
   margin-top: 60rpx;
   margin-left: 60rpx;
   margin-right: 60rpx;
@@ -19,4 +17,3 @@
   background: #55cc65;
   text-align: center;
 }
-
