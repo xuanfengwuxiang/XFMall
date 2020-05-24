@@ -1,0 +1,17 @@
+<!--订单里面的商品列表-->
+
+<view wx:for="{{products}}" wx:key="{{index}}" class="orders">
+  <view data-index="{{index}}" class="prodct_item">
+
+    <image src="{{item.pic}}" class="img" />
+
+    <view class="right">
+
+      <text>{{item.cmName}}</text>
+
+      <text>{{"x"+item.cmNum}}</text>
+    </view>
+
+  </view>
+
+</view>

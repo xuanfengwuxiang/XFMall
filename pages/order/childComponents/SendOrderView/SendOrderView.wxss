@@ -1,1 +1,26 @@
-/* pages/order/childComponents/SendOrderView/SendOrderView.wxss */
+/* 送货上门订单view 样式 */
+
+.orders {
+  margin-top: 30rpx;
+}
+
+.order_item {
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  margin-top: 15rpx;
+  background: #fff;
+  border-radius: 15rpx;
+}
+
+.orderId {
+  color: #666;
+  font-size: 24rpx;
+  margin: 15rpx;
+  padding-bottom: 10rpx;
+  border-bottom: #eee solid 1rpx;
+  flex-grow: 1;
+}
+
+.container{
+  display: flex
+}

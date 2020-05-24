@@ -1,0 +1,23 @@
+/* pages/order/childComponents/CommodityView.wxss */
+
+.prodct_item {
+  display: flex;
+  flex-direction: row;
+  padding-top: 15rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  padding-bottom: 15rpx;
+  border-bottom: #eeeeee solid 1rpx;
+}
+
+.right {
+  margin-left: 20rpx;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img {
+  width: 60rpx;
+  height: 60rpx;
+}

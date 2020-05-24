@@ -1,6 +1,8 @@
 {
   "component": true,
   "usingComponents": {
-    "tab": "/components/tab/tab"
+    "tab": "/components/tab/tab",
+    "CommodityView":"../childComponents/CommodityView/CommodityView"
+
   }
 }
