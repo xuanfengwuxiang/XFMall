@@ -1,1 +1,35 @@
-/* pages/order/childComponents/SelfOrderView/SelfOrderView.wxss */
+/* 自提订单view 样式 */
+.root{
+  margin-top: 100rpx;
+}
+
+.tab{
+  position: fixed;
+  width: 100%;
+  background: #ffffff
+}
+.orders {
+  padding-top: 80rpx;
+}
+
+.order_item {
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  margin-top: 15rpx;
+  background: #fff;
+  border-radius: 15rpx;
+}
+
+.orderId {
+  color: #666;
+  font-size: 24rpx;
+  margin: 15rpx;
+  padding-bottom: 10rpx;
+  border-bottom: #eee solid 1rpx;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.order_container{
+  display: flex
+}

@@ -1,20 +1,21 @@
 <!--送货上门订单view-->
 
-<view hidden="{{hidden}}">
+<view hidden="{{hidden}}" class="root">
 
-  <tab tittles="{{tittles}}" />
+  <tab tittles="{{tittles}}" class="tab"/>
 
   <!-- 功能列表 -->
-  <view wx:for="{{sendOrders}}" wx:key="{{index}}" class="orders">
-    <view data-index="{{index}}" class="order_item">
+  <view class="orders">
+    <block wx:for="{{sendOrders}}" wx:key="{{index}}" >
+      <view data-index="{{index}}" class="order_item">
 
-      <view class="container">
-        <text class="orderId">{{"订单编号："+item.orderId}}</text>
+        <view class="order_container">
+          <text class="orderId">{{"订单编号："+item.orderId}}</text>
+        </view>
 
+        <CommodityView products="{{item.products}}" />
       </view>
 
-      <CommodityView products="{{item.products}}" />
-    </view>
-
+    </block>
   </view>
 </view>

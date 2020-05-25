@@ -1,13 +1,15 @@
 /* 发现界面 样式 */
 
 /* 标题总布局 */
-
 .tittle {
   height: 100rpx;
   background: #4fae70;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .group {
@@ -46,6 +48,6 @@
   padding-right: 5rpx;
 }
 
-page{
-  background:#eeeeee;
+page {
+  background: #eee;
 }

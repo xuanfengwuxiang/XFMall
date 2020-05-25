@@ -1,12 +1,19 @@
 /* 需求反馈界面 样式*/
 
+.input_root{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .input {
   height: 400rpx;
   margin-top: 60rpx;
   background: #eee;
   border-radius: 10rpx;
   padding: 10rpx;
-  width: 100%;
+  width: 80%;
+
 }
 
 .commit_button {

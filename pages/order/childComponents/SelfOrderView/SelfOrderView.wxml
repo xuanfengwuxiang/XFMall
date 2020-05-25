@@ -1,6 +1,21 @@
 <!--自提订单view-->
 
-<view hidden="{{hidden}}">
-  <tab tittles="{{tittles}}" />
+<view hidden="{{hidden}}" class="root">
+  <tab tittles="{{tittles}}" class="tab"/>
 
+
+<!-- 功能列表 -->
+  <view class="orders">
+    <block wx:for="{{slefOrders}}" wx:key="{{index}}" >
+      <view data-index="{{index}}" class="order_item">
+
+        <view class="order_container">
+          <text class="orderId">{{"订单编号："+item.orderId}}</text>
+        </view>
+
+        <CommodityView products="{{item.products}}" />
+      </view>
+
+    </block>
+  </view>
 </view>

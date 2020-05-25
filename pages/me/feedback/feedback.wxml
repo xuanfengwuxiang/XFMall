@@ -2,7 +2,10 @@
 
 
 <!-- 输入框 -->
-  <textarea class="input" placeholder="请输入您的宝贵意见" bindinput="getFeedBack" />
+<view class="input_root">
+  <textarea class="input" placeholder="请输入您的宝贵意见" bindinput="getFeedBack"/>
+
+</view>
 
 
 <button class="commit_button" bindtap="commit">提交</button>
