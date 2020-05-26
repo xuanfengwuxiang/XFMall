@@ -1,1 +1,109 @@
 /* pages/goods/goods.wxss */
+
+.tittle {
+  background: white;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+}
+
+.group_name {
+  font-size: 30rpx;
+  margin-right: 5rpx;
+}
+
+.triangle_up {
+  width: 0;
+  height: 0;
+  border-left: 12rpx solid transparent;
+  border-right: 12rpx solid transparent;
+  border-bottom: 25rpx solid black;
+}
+
+.triangle_down {
+  width: 0;
+  height: 0;
+  border-left: 12rpx solid transparent;
+  border-right: 12rpx solid transparent;
+  border-top: 25rpx solid black;
+}
+
+.list_view {
+  margin-top: 80rpx;
+}
+
+.item {
+  padding-left: 30rpx;
+  padding-right: 20rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+  background: white;
+}
+
+.item_right {
+  display: flex;
+  flex-direction: column;
+}
+
+.item_right_bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.pic {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+}
+
+.name {
+  font-size: 30rpx;
+  color: grey;
+}
+
+.name_num {
+  font-size: 30rpx;
+  margin-right: 50rpx;
+}
+
+.plus {
+  position: fixed;
+  bottom: 40rpx;
+  right: 40rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.group_pop {
+  position: fixed;
+  top: 80rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  background: #9cf0b8c2;
+  border-radius: 12rpx;
+}
+
+.pop_mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00000000;
+}
+
+page {
+  background: #eee;
+
+}

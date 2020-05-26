@@ -1,2 +1,53 @@
-<!--pages/goods/goods.wxml-->
-<text>pages/goods/goods.wxml</text>
+<!--商品界面-->
+
+<!-- 分组切换 -->
+<view class="tittle">
+
+  <view class="group" bindtap="onClickGroup">
+    <text class="group_name">所有分组</text>
+    <view class="triangle_down" />
+  </view>
+</view>
+
+
+<!-- 商品列表 -->
+<view class="list_view">
+  <block wx:for="{{products}}" wx:key="{{index}}">
+    <view data-index="{{index}}" class="item">
+      <image src="{{item.pic}}" class="pic" />
+
+      <view class="item_right">
+        <text>{{item.cmName}}</text>
+
+        <view class="item_right_bottom">
+
+          <view>
+            <text class="name">库存:</text>
+            <text class="name_num">{{item.repo+item.unit}}</text>
+          </view>
+
+          <view>
+            <text class="name">已售:</text>
+            <text class="name_num">{{item.repo+item.unit}}</text>
+          </view>
+
+        </view>
+      </view>
+    </view>
+
+  </block>
+
+</view>
+
+<!-- 添加按钮 -->
+<image src="/images/goods/ic_plus.png" class="plus" bindtap="onClickPlus" />
+
+<!-- 选择分组弹窗 -->
+<view class="group_pop" bindtap="onClickMask" hidden="{{!isShowPop}}">
+  <view class="pop_mask" />
+  <block wx:for="{{groups}}" wx:key="{{index}}">
+    <view data-index="{{index}}">
+      <text>{{item}}</text>
+    </view>
+  </block>
+</view>
