@@ -136,8 +136,8 @@ Page({
 
   // 点击加号
   onClickPlus: function() {
-    wx.showToast({
-      title: '添加商品',
+    wx.navigateTo({
+      url: '/pages/goods/addProduct/addProduct',
     })
   },
 

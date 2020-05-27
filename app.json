@@ -18,7 +18,8 @@
     "pages/home/recommend/integralMall/integralMall",
     "pages/home/recommend/signIntegral/signIntegral",
     "pages/me/login/login",
-    "pages/goods/goods"
+    "pages/goods/goods",
+    "pages/goods/addProduct/addProduct"
   ],
   "tabBar": {
     "selectedColor": "#008000",

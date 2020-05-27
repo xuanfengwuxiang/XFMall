@@ -3,7 +3,7 @@
 
 <!-- 输入框 -->
 <view class="input_root">
-  <textarea class="input" placeholder="请输入您的宝贵意见" bindinput="getFeedBack"/>
+  <textarea class="input" placeholder="请输入您的宝贵意见" bindinput="getFeedBack" maxlength="500"/>
 
 </view>
 

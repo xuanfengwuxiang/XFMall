@@ -1,0 +1,62 @@
+<!--添加商品界面-->
+
+
+<!-- 商品类型 -->
+<view class="horizental">
+
+  <text>商品类型：</text>
+  <input placeholder="请输入商品类型" bindinput="getProductType" />
+</view>
+
+
+<!-- 商品名称 -->
+<view class="horizental">
+
+  <text>商品名称：</text>
+  <input placeholder="请输入商品名称" bindinput="getProductName" />
+</view>
+
+
+<!-- 库存数量 -->
+<view class="horizental">
+
+  <text>库存数量：</text>
+  <input placeholder="请输入库存数量" bindinput="getRepo" />
+</view>
+
+<!-- 销售价格 -->
+<view class="horizental">
+
+  <text>销售价格：</text>
+  <input placeholder="请输入销售价格" bindinput="getProductPrice" />
+</view>
+
+<!-- 售价单位 -->
+<view class="horizental">
+
+  <text>售价单位：</text>
+  <input placeholder="请输入售价单位" bindinput="getProductUnit" />
+</view>
+
+<!-- 添加图片 -->
+
+
+<!-- 图片列表 -->
+<scroll-view scroll-x class="scroll_view">
+  <view class="list_view">
+
+    <view class="item_root" wx:for="{{images}}" wx:key="{{index}}">
+      <image class="item_pic" src="{{item}}" mode="aspectFill" data-index="{{index}}" bindtap="preview" />
+      <image class="item_delete" src="/images/global/ic_delete.png" data-index="{{index}}" bindtap="deletePic" />
+    </view>
+
+    <view class="add_pic" bindtap="addPic">
+      <image src="/images/global/ic_add.png" mode="scaleToFill" />
+      <text class="add_tip">添加图片</text>
+    </view>
+  </view>
+
+</scroll-view>
+
+<!-- 上架按钮 -->
+<button class="add_product" bindtap="addProduct">上架水果</button>
