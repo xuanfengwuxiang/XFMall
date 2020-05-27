@@ -10,43 +10,50 @@ Page({
       "cmName": "荔枝",
       "repo": "100",
       "saleNum": "22",
-      "unit": "颗"
+      "unit": "颗",
+      "price": "15"
     }, {
       "pic": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1591109167&di=a1c73b0b8026d1ac8e68599c0c95fab4&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170201%2F6b83011bcefd404f8a802d490d88209e_th.jpg",
       "cmName": "荔枝",
       "repo": "100",
       "saleNum": "22",
-      "unit": "颗"
+      "unit": "颗",
+      "price": "15"
     }, {
       "pic": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1591109167&di=a1c73b0b8026d1ac8e68599c0c95fab4&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170201%2F6b83011bcefd404f8a802d490d88209e_th.jpg",
       "cmName": "荔枝",
       "repo": "100",
       "saleNum": "22",
-      "unit": "颗"
+      "unit": "颗",
+      "price": "15"
     }, {
       "pic": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1591109167&di=a1c73b0b8026d1ac8e68599c0c95fab4&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170201%2F6b83011bcefd404f8a802d490d88209e_th.jpg",
       "cmName": "荔枝",
       "repo": "100",
       "saleNum": "22",
-      "unit": "颗"
+      "unit": "颗",
+      "price": "15"
     }, {
       "pic": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1591109167&di=a1c73b0b8026d1ac8e68599c0c95fab4&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170201%2F6b83011bcefd404f8a802d490d88209e_th.jpg",
       "cmName": "荔枝",
       "repo": "100",
       "saleNum": "22",
-      "unit": "颗"
+      "unit": "颗",
+      "price": "15"
     }, {
       "pic": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1591109167&di=a1c73b0b8026d1ac8e68599c0c95fab4&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170201%2F6b83011bcefd404f8a802d490d88209e_th.jpg",
       "cmName": "荔枝",
       "repo": "100",
       "saleNum": "22",
-      "unit": "颗"
+      "unit": "颗",
+      "price": "15"
     }, {
       "pic": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1591109167&di=a1c73b0b8026d1ac8e68599c0c95fab4&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170201%2F6b83011bcefd404f8a802d490d88209e_th.jpg",
       "cmName": "荔枝",
       "repo": "100",
       "saleNum": "22",
-      "unit": "颗"
+      "unit": "颗",
+      "price": "15"
     }, {
       "pic": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1591109167&di=a1c73b0b8026d1ac8e68599c0c95fab4&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170201%2F6b83011bcefd404f8a802d490d88209e_th.jpg",
       "cmName": "荔枝",

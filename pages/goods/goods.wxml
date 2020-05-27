@@ -13,25 +13,33 @@
 <!-- 商品列表 -->
 <view class="list_view">
   <block wx:for="{{products}}" wx:key="{{index}}">
-    <view data-index="{{index}}" class="item">
+
+
+    <view data-index="{{index}}" class="item_c">
       <image src="{{item.pic}}" class="pic" />
 
       <view class="item_right">
-        <text>{{item.cmName}}</text>
+        <text class="cmName">{{item.cmName}}</text>
 
-        <view class="item_right_bottom">
+        <view class="horizental">
 
-          <view>
+          <view class="horizental">
             <text class="name">库存:</text>
             <text class="name_num">{{item.repo+item.unit}}</text>
           </view>
 
-          <view>
+          <view class="horizental">
             <text class="name">已售:</text>
             <text class="name_num">{{item.repo+item.unit}}</text>
           </view>
 
         </view>
+
+        <view class="horizental">
+          <text class="name">统一价:</text>
+          <text class="name_num">{{item.price+"元/"+item.unit}}</text>
+        </view>
+
       </view>
     </view>
 

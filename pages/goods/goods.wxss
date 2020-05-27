@@ -1,5 +1,7 @@
 /* pages/goods/goods.wxss */
 
+/* 分组按钮 */
+
 .tittle {
   background: white;
   padding-left: 20rpx;
@@ -21,6 +23,8 @@
   margin-right: 5rpx;
 }
 
+/* 三角形 */
+
 .triangle_up {
   width: 0;
   height: 0;
@@ -41,7 +45,7 @@
   margin-top: 80rpx;
 }
 
-.item {
+.item_c {
   padding-left: 30rpx;
   padding-right: 20rpx;
   padding-top: 20rpx;
@@ -49,21 +53,28 @@
   display: flex;
   flex-direction: row;
   background: white;
+  align-items: center;
+  border-bottom: #eee solid 1rpx;
 }
 
 .item_right {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
-.item_right_bottom {
+.cmName {
+  font-size: 35rpx;
+}
+
+.horizental {
   display: flex;
   flex-direction: row;
 }
 
 .pic {
-  width: 100rpx;
-  height: 100rpx;
+  width: 120rpx;
+  height: 120rpx;
   margin-right: 20rpx;
 }
 
@@ -85,6 +96,8 @@
   height: 100rpx;
 }
 
+/* 弹窗 */
+
 .group_pop {
   position: fixed;
   top: 80rpx;
@@ -94,7 +107,7 @@
   border-radius: 12rpx;
 }
 
-.pop_mask{
+.pop_mask {
   position: fixed;
   top: 0;
   left: 0;
@@ -105,5 +118,4 @@
 
 page {
   background: #eee;
-
 }
