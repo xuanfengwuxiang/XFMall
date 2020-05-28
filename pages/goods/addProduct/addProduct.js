@@ -10,7 +10,7 @@ Page({
     "repo": "",
     "unit": "",
     "price": "",
-    "images":[]
+    "images": []
   },
 
   /**
@@ -97,7 +97,7 @@ Page({
   //添加图片
   addPic: function(event) {
     wx.chooseImage({
-      sizeType: ['original', 'compressed'],  //可选择原图或压缩后的图片
+      sizeType: ['original', 'compressed'], //可选择原图或压缩后的图片
       sourceType: ['album', 'camera'], //可选择性开放访问相册、相机
       success: res => {
         const images = this.data.images.concat(res.tempFilePaths)
@@ -109,8 +109,28 @@ Page({
     })
   },
 
+  //点击图片预览
+  onClickPic: function(event) {
+    var index = event.currentTarget.dataset.index;
+    const images = this.data.images
+    wx.previewImage({
+      current: images[index], //当前预览的图片
+      urls: images, //所有要预览的图片
+    })
+  },
+
+  //点击删除图片
+  deletePic:function(event){
+      var index = event.currentTarget.dataset.index;
+      var temp = this.data.images;
+    temp.splice(index,1);
+      this.setData({
+        images: temp
+      })
+  },
+
   //上架水果
   addProduct: function(event) {
-   
+
   }
 })

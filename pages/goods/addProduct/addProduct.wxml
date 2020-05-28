@@ -46,11 +46,11 @@
   <view class="list_view">
 
     <view class="item_root" wx:for="{{images}}" wx:key="{{index}}">
-      <image class="item_pic" src="{{item}}" mode="aspectFill" data-index="{{index}}" bindtap="preview" />
+      <image class="item_pic" src="{{item}}" mode="aspectFill" data-index="{{index}}" bindtap="onClickPic" />
       <image class="item_delete" src="/images/global/ic_delete.png" data-index="{{index}}" bindtap="deletePic" />
     </view>
 
-    <view class="add_pic" bindtap="addPic">
+    <view class="add_pic" bindtap="addPic" hidden="{{images.length>2}}">
       <image src="/images/global/ic_add.png" mode="scaleToFill" />
       <text class="add_tip">添加图片</text>
     </view>
