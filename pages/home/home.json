@@ -1,9 +1,6 @@
 {
   "usingComponents": {
-    "banner": "/components/banner/banner",
-    "recommend": "./childComponents/recommend/recommend",
-    "myProtection":"./childComponents/myProtection/myProtection",
-    "nearestPlace":"./childComponents/nearestPlace/nearestPlace"
+    
   },
   "navigationBarTitleText": "旋风商城"
 }

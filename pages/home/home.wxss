@@ -1,8 +1,119 @@
 /* 首页样式 */
 
-.popular {
-  width: 100%;
-  height: 200rpx;
+.tittle_root {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(81, 182, 115);
 }
 
+.tittle_store_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
+.tittle_store_info text {
+  color: white;
+  font-size: 30rpx;
+}
+
+.tittle_change_store {
+  color: white;
+  font-size: 30rpx;
+  margin-right: 30rpx;
+}
+
+/* 头像 */
+
+.head {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 30rpx;
+  margin-right: 15rpx;
+  border-radius: 250rpx;
+}
+
+.tittle_arrow {
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  margin-right: 50rpx;
+}
+
+.today_tittle {
+  padding-top: 30rpx;
+  background: rgb(81, 182, 115);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.today_tittle text {
+  color: white;
+}
+
+.tip {
+  font-size: 30rpx;
+}
+
+.today_data {
+  background: rgb(81, 182, 115);
+  padding: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.order_num {
+  flex-grow: 1;
+  background: rgb(72, 161, 102);
+  border-radius: 15rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.order_num text{
+  color: white;
+}
+.trade_num {
+  flex-grow: 1;
+  background: rgb(72, 161, 102);
+  border-radius: 15rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.trade_num text{
+  color: white
+}
+
+.desc{
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.button_root{
+  background: rgb(81, 182, 115);
+  padding: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.button_root button{
+  color: rgb(13, 73, 16);
+  background: rgb(169, 204, 181);
+  border-radius: 60rpx;
+}

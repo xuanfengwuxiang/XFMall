@@ -1,18 +1,42 @@
-<!--首页-->
+<!--店铺界面-->
 
-<!-- 轮播图 -->
-<banner list="{{banners}}" bannerHeight="350rpx" />
+<!-- 标题栏 -->
+<view class="tittle_root">
+  <view class="tittle_store_info">
+    <image class="head" src="/images/me/ic_head_default.jpg" />
+    <text>旋风水果</text>
+    <image class="tittle_arrow" src="/images/global/arrow.png" />
+  </view>
 
-<!-- 推荐数据 -->
-<recommend list="{{recommends}}" />
-
-<!-- 流行 -->
-<view class="popular" bindtap="onPopularClick">
-  <image src="/images/home/ic_popular.png" class="popular" mode="scaleToFill" />
+  <text class="tittle_change_store">切换店铺</text>
 </view>
 
-<!-- 我的环保 -->
-<myProtection currentMoney="{{loginBean!=null?'¥'+loginBean.money:'¥0.00'}}" protectionNum="{{protection.protectionNum}}" currentIntegral="{{loginBean!=null?loginBean.integral:'0'}}" />
+<!-- 今日数据标题 -->
+<view class="today_tittle">
+  <text>今日数据</text>
+  <text class="tip">(每五分钟更新一次)</text>
 
-<!-- 最近回收点 -->
-<nearestPlace nearestPlace="{{nearstPlace.nearestPlace}}" placeDetail="{{nearstPlace.placeDetail}}" distance="{{nearstPlace.distance}} " />
+</view>
+
+
+<!-- 订单数、交易额 -->
+<view class="today_data">
+
+  <!-- 订单数 -->
+  <view class="order_num">
+    <text class="desc">订单数(个)</text>
+    <text>33</text>
+
+  </view>
+
+  <!-- 交易额 -->
+  <view class="trade_num">
+    <text class="desc">交易额(元)</text>
+    <text>3.3</text>
+  </view>
+
+</view>
+
+<view class="button_root">
+  <button size="mini">更多数据统计</button>
+</view>
