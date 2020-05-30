@@ -1,0 +1,17 @@
+<!--切换店铺界面-->
+
+<view class="list_view">
+  <view class="stores" wx:for="{{stores}}" wx:key="index"  bindtap="onItemClick" >
+  
+  <image class="pic" src="/images/me/ic_head_default.jpg"/>
+  <view class="right">
+    <text>旋风水果</text>
+    <view class="addr_root" >
+      <image class="addr_img" src="/images/global/ic_addr.png"/>
+      <text class="addr_txt">江宁区东麒麟</text>
+    </view>
+
+  </view>
+  </view>
+ 
+</view>

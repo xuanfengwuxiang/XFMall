@@ -1,0 +1,79 @@
+/* pages/home/moreData/moreData.wxss */
+
+
+.period_root{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.period_ret{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 15rpx;
+  border: grey 1rpx solid;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.period_ret text{
+  margin-right: 10rpx;
+}
+
+.item{
+  background: green;
+  margin-right: 1rpx;
+  margin-left: 1rpx;
+  border-radius: 15rpx;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+}
+
+.triangle_down {
+  width: 0;
+  height: 0;
+  border-left: 12rpx solid transparent;
+  border-right: 12rpx solid transparent;
+  border-top: 25rpx solid black;
+}
+
+
+.today_data {
+  padding: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.order_num {
+  flex-grow: 1;
+  background: rgb(180, 241, 201);
+  border-radius: 15rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.order_num text{
+  color: black;
+}
+.trade_num {
+  flex-grow: 1;
+  background:  rgb(180, 241, 201);
+  border-radius: 15rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.trade_num text{
+  color: black
+}
+

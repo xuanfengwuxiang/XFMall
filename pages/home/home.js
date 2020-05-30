@@ -138,11 +138,16 @@ Page({
     })
   },
 
-  // 流行模块点击事件
-  onPopularClick: function() {
+  // 点击切换店铺
+  onClickSwitchStore: function() {
     wx.navigateTo({
-      url: './collectToHome/collectToHome',
+      url: './switchStore/switchStore',
     })
-  }
+  },
 
+  onClickMoreData:function(){
+      wx.navigateTo({
+        url: './moreData/moreData',
+      })
+  }
 })

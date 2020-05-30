@@ -8,7 +8,7 @@
     <image class="tittle_arrow" src="/images/global/arrow.png" />
   </view>
 
-  <text class="tittle_change_store">切换店铺</text>
+  <text class="tittle_change_store" bindtap="onClickSwitchStore">切换店铺</text>
 </view>
 
 <!-- 今日数据标题 -->
@@ -37,6 +37,6 @@
 
 </view>
 
-<view class="button_root">
+<view class="button_root" bindtap="onClickMoreData">
   <button size="mini">更多数据统计</button>
 </view>

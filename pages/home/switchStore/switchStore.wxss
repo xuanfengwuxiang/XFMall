@@ -1,0 +1,49 @@
+/* pages/home/switchStore/switchStore.wxss */
+
+.list_view {
+  margin-top: 20rpx;
+}
+
+.stores {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  background: white;
+  margin-bottom: 1rpx;
+  padding-bottom: 10rpx;
+  padding-top: 10rpx;
+}
+
+.pic {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 30rpx;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.addr_root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.addr_img {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+
+.addr_txt {
+  color: grey;
+  font-size: 30rpx;
+}
+
+page {
+  background: #eee;
+}

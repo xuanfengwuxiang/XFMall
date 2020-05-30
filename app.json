@@ -7,10 +7,12 @@
     "pages/me/aboutUs/aboutUs",
     "pages/me/help/help",
     "pages/me/setting/setting",
-
     "pages/me/login/login",
     "pages/goods/goods",
-    "pages/goods/addProduct/addProduct"
+    "pages/goods/addProduct/addProduct",
+    "pages/home/switchStore/switchStore",
+    "pages/home/switchStore/moreData",
+    "pages/home/moreData/moreData"
   ],
   "tabBar": {
     "selectedColor": "#008000",
